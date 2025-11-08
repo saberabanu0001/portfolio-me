@@ -28,7 +28,9 @@ const Header = ({ isScrolled }: HeaderProps) => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <a href="#home">SB</a>
+          <a href="#home" className="logo-mark">
+            <span>SB</span>
+          </a>
         </div>
 
         <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
@@ -59,4 +61,3 @@ const Header = ({ isScrolled }: HeaderProps) => {
 }
 
 export default Header
-

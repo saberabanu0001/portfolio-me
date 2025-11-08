@@ -23,17 +23,23 @@ export const heroContent = {
 
 export const aboutContent = {
   heading: 'About Sabera',
+  microIntro: '🚀 Passionate about turning data into intelligent, human-centered AI solutions.',
   paragraphs: [
-    'I am an international Computer Science student at Sejong University, currently working as a Junior Python Developer at JBRSOFT Limited. I love transforming research-backed ideas into practical, human-centered AI products.',
-    'As the team lead for PDF Quizzard and other AI initiatives, I thrive at the intersection of natural language processing, retrieval-augmented generation, and thoughtful user experience design.',
-    'My guiding principle is simple: deeds, not words. I believe that technology should be empathetic, inclusive, and measurable in its impact.',
+    'I’m an international Computer Science student at Sejong University and a Junior Python Developer at JBRSOFT Limited. I’m passionate about transforming research-driven ideas into intelligent, human-centered AI products.',
+    'As the team lead for PDF Quizzard and other AI initiatives, I thrive at the intersection of natural language processing, retrieval-augmented generation, and thoughtful product design.',
   ],
+  impact: 'Our tools have helped automate quiz creation for educators and streamline data workflows.',
+  personalNote: 'Beyond coding, I love mentoring students and exploring how AI can make learning more inclusive.',
   highlights: [
-    { label: 'Focus', value: 'AI, NLP & retrieval-augmented experiences' },
-    { label: 'Currently Learning', value: 'Computer Vision and LangChain' },
-    { label: 'Strength', value: 'Empathetic leadership & clear communication' },
+    { label: 'Focus', value: 'AI, NLP & retrieval-augmented experiences', icon: '🧠' },
+    { label: 'Currently Learning', value: 'Computer Vision and LangChain', icon: '📚' },
+    { label: 'Strength', value: 'Empathetic leadership & clear communication', icon: '💬' },
   ],
-  principles: ['Listen first, build second', 'Measure the impact', 'Keep learning'],
+  principles: [
+    { icon: '🎧', text: 'Listen first. Build second.' },
+    { icon: '📊', text: 'Measure the impact.' },
+    { icon: '🌱', text: 'Keep learning always.' },
+  ],
 }
 
 export const projects = [
@@ -45,6 +51,8 @@ export const projects = [
     liveUrl: undefined,
     repoUrl: 'https://github.com/saberabanu0001/EduPDF-Quiz-Maker',
     status: 'Featured',
+    image: undefined,
+    imageAlt: undefined,
   },
   {
     title: 'CalmMateAI',
@@ -54,6 +62,19 @@ export const projects = [
     liveUrl: undefined,
     repoUrl: 'https://github.com/saberabanu0001/NewCalmateAI',
     status: 'Featured',
+    image: '/images/calmmateai-dashboard.png',
+    imageAlt: 'CalmMateAI dashboard preview',
+  },
+  {
+    title: 'University Jacket Ordering Platform',
+    description:
+      'Responsive PHP platform that streamlines ordering, tracking, and managing university jackets with authentication, catalog browsing, and contact support workflows.',
+    tags: ['PHP', 'MySQL', 'HTML', 'CSS'],
+    liveUrl: undefined,
+    repoUrl: 'https://github.com/saberabanu0001/UniversityJackedOrderingPlatform',
+    status: 'Case Study',
+    image: undefined,
+    imageAlt: undefined,
   },
   {
     title: 'EventBuddy',
@@ -72,6 +93,8 @@ export const projects = [
     liveUrl: undefined,
     repoUrl: 'https://github.com/saberabanu0001/JobConnect',
     status: 'Case Study',
+    image: undefined,
+    imageAlt: undefined,
   },
 ]
 

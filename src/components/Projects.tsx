@@ -1,6 +1,19 @@
 import { motion } from 'framer-motion'
 import { ExternalLink, Github } from './Icons'
-import { projects as projectData } from '../content'
+import { projects } from '../content'
+
+type Project = {
+  title: string
+  description: string
+  tags: string[]
+  liveUrl?: string
+  repoUrl?: string
+  status: string
+  image?: string
+  imageAlt?: string
+}
+
+const projectData: Project[] = projects
 
 const Projects = () => {
   const fadeInUp = {
@@ -65,7 +78,11 @@ const Projects = () => {
                     </a>
                   )}
                 </div>
-                <div className="project-placeholder">{project.title}</div>
+                {project.image ? (
+                  <img src={project.image} alt={project.imageAlt ?? `${project.title} preview`} />
+                ) : (
+                  <div className="project-placeholder">{project.title}</div>
+                )}
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>

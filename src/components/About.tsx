@@ -36,7 +36,7 @@ const About = () => {
           <div className="section-line"></div>
         </motion.div>
 
-        <div className="about-content">
+        <div className="about-content single-column">
           <motion.div
             className="about-text"
             initial="hidden"
@@ -44,15 +44,29 @@ const About = () => {
             viewport={{ once: true, margin: '-100px' }}
             variants={staggerContainer}
           >
+            <motion.p className="about-micro-intro" variants={fadeInUp}>
+              {aboutContent.microIntro}
+            </motion.p>
             {aboutContent.paragraphs.map((paragraph) => (
               <motion.p key={paragraph.substring(0, 20)} variants={fadeInUp}>
                 {paragraph}
               </motion.p>
             ))}
 
+            <motion.p className="about-impact" variants={fadeInUp}>
+              {aboutContent.impact}
+            </motion.p>
+
+            <motion.p className="about-personal" variants={fadeInUp}>
+              {aboutContent.personalNote}
+            </motion.p>
+
             <motion.div className="about-highlights" variants={fadeInUp}>
               {aboutContent.highlights.map((item) => (
                 <div key={item.label} className="highlight-card">
+                  <span className="highlight-icon" aria-hidden="true">
+                    {item.icon}
+                  </span>
                   <span className="highlight-label">{item.label}</span>
                   <span className="highlight-value">{item.value}</span>
                 </div>
@@ -63,23 +77,13 @@ const About = () => {
               <h3>Guiding principles</h3>
               <ul>
                 {aboutContent.principles.map((principle) => (
-                  <li key={principle}>{principle}</li>
+                  <li key={principle.text}>
+                    <span aria-hidden="true">{principle.icon}</span>
+                    {principle.text}
+                  </li>
                 ))}
               </ul>
             </motion.div>
-          </motion.div>
-
-          <motion.div
-            className="about-image"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-100px' }}
-            variants={fadeInUp}
-          >
-            <div className="image-frame">
-              <div className="image-content"></div>
-              <div className="image-border"></div>
-            </div>
           </motion.div>
         </div>
       </div>

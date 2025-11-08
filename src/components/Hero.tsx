@@ -27,6 +27,10 @@ const Hero = () => {
     },
   }
 
+  const highlightedDescription = heroContent.description
+    .replace('Sejong University', '<span class="text-highlight">Sejong University</span>')
+    .replace('JBRSOFT Limited', '<span class="text-highlight">JBRSOFT Limited</span>')
+
   return (
     <section id="home" className="hero">
       <motion.div
@@ -41,7 +45,7 @@ const Hero = () => {
             <span className="gradient-text">{heroContent.name}</span>
           </h1>
           <h2 className="hero-title">{heroContent.title}</h2>
-          <p className="hero-description">{heroContent.description}</p>
+          <p className="hero-description" dangerouslySetInnerHTML={{ __html: highlightedDescription }} />
           <ul className="hero-meta">
             <li>{heroContent.location}</li>
             <li>{heroContent.availability}</li>
