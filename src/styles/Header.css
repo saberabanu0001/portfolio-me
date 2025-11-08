@@ -20,8 +20,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
-  margin-left: clamp(1.5rem, 5vw, 3rem);
-  margin-right: clamp(1.5rem, 5vw, 3rem);
+  margin-left: clamp(5rem, 8vw, 7rem);
+  margin-right: clamp(2rem, 5vw, 3.5rem);
   display: flex;
   justify-content: space-between;
   align-items: center;

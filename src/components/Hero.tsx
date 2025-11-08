@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { heroContent } from '../content'
 
 const Hero = () => {
+  const [showPhoto, setShowPhoto] = useState(true)
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -55,7 +58,15 @@ const Hero = () => {
 
         <motion.div className="hero-image" variants={itemVariants}>
           <div className="image-wrapper">
-            <div className="gradient-orb"></div>
+            {showPhoto && (
+              <img
+                src="/sabera-profile-pic.jpeg"
+                alt="Sabera Banu"
+                className="profile-photo"
+                onError={() => setShowPhoto(false)}
+              />
+            )}
+            <div className={`gradient-orb ${showPhoto ? 'behind-photo' : ''}`}></div>
           </div>
         </motion.div>
       </motion.div>
