@@ -17,6 +17,10 @@
   transition: all 0.3s ease;
 }
 
+.project-card.clickable {
+  cursor: pointer;
+}
+
 .project-card:hover {
   border-color: var(--accent);
 }
