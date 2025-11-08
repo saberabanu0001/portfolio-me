@@ -39,8 +39,15 @@ const Education = () => {
             {education.map((item) => (
               <article key={item.institution} className="education-card">
                 <header>
-                  <h3>{item.institution}</h3>
-                  <p>{item.degree}</p>
+                  {item.logo && (
+                    <div className="education-logo">
+                      <img src={item.logo} alt={`${item.institution} logo`} />
+                    </div>
+                  )}
+                  <div>
+                    <h3>{item.institution}</h3>
+                    <p>{item.degree}</p>
+                  </div>
                 </header>
                 <div className="education-meta">
                   <span>{item.period}</span>

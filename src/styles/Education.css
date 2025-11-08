@@ -39,6 +39,30 @@
   margin-top: 0.25rem;
 }
 
+.education-card header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.education-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.15);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: saturate(0.6);
+}
+
 .education-meta {
   display: flex;
   gap: 1.25rem;

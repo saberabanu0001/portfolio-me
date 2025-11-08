@@ -134,25 +134,36 @@ export const skills = {
 
 export const experiences = [
   {
-    role: 'Junior Python Developer',
-    organization: 'JBRSOFT Limited',
-    period: '2024 — Present',
-    location: 'Remote',
+    role: 'Teaching Assistant',
+    organization: 'Sejong University',
+    period: 'Sep 2024 — Present',
+    location: 'Seoul, South Korea',
     bullets: [
-      'Develop NLP and LLM-driven features for enterprise knowledge bases with a focus on accuracy and safety.',
-      'Collaborate with cross-functional teams to deploy retrieval-augmented applications supporting customer support and analytics.',
-      'Experiment with prompt engineering and evaluation frameworks to improve response quality.',
+      'Assist professors in Algorithms and Data Structures courses through problem-solving sessions, grading, and mentoring.',
+      'Support debugging and code quality reviews to help students adopt best practices.',
+      'Coordinate study groups and provide tailored feedback to improve learning outcomes.',
     ],
   },
   {
-    role: 'Team Lead & Researcher',
-    organization: 'PDF Quizzard (Capstone)',
-    period: '2023 — 2024',
-    location: 'Sejong University',
+    role: 'Python Instructor',
+    organization: 'JBRSOFT Limited Academy',
+    period: 'Jan 2025 — Present',
+    location: 'Remote',
     bullets: [
-      'Coordinated a four-person team to transform research PDFs into interactive quizzes for students.',
-      'Designed RAG pipeline and evaluation metrics to align generated questions with academic outcomes.',
-      'Presented findings in departmental showcases, receiving recognition for practical impact.',
+      'Teach Python fundamentals, OOP, and AI applications to 15+ students from multiple universities.',
+      'Design structured lesson plans that combine theory with real-world projects.',
+      'Provide mentorship, code reviews, and project guidance to help learners ship production-ready apps.',
+    ],
+  },
+  {
+    role: 'Programmer',
+    organization: 'Incell Bangladesh',
+    period: 'Jun 2023 — Present',
+    location: 'Remote',
+    bullets: [
+      'Manage full-stack development across product ordering, payment handling, and live chatbot support.',
+      'Maintain PHP/MySQL infrastructure and coordinate releases with the development team.',
+      'Collaborate with stakeholders to gather requirements and deliver features on schedule.',
     ],
   },
 ]
@@ -164,6 +175,7 @@ export const education = [
     period: '2021 — Present',
     location: 'Seoul, South Korea',
     details: ['International Student', 'Research focus: NLP & AI systems', 'Capstone: Robotics & Hardware learning journal'],
+    logo: '/image.png',
   },
 ]
 
