@@ -41,7 +41,13 @@ const Experience = () => {
               <header className="experience-card-header">
                 <div>
                   <h3>{experience.role}</h3>
-                  <p>{experience.organization}</p>
+                  {experience.url ? (
+                    <a href={experience.url} target="_blank" rel="noopener noreferrer" className="experience-org">
+                      {experience.organization}
+                    </a>
+                  ) : (
+                    <p>{experience.organization}</p>
+                  )}
                 </div>
                 <div className="experience-meta">
                   <span>{experience.period}</span>

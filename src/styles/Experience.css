@@ -36,8 +36,15 @@
   color: var(--text-primary);
 }
 
-.experience-card-header p {
+.experience-card-header p,
+.experience-card-header .experience-org {
   color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.experience-card-header .experience-org:hover {
+  color: var(--accent);
 }
 
 .experience-meta {

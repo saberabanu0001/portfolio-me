@@ -138,6 +138,7 @@ export const experiences = [
     organization: 'Sejong University',
     period: 'Sep 2024 — Present',
     location: 'Seoul, South Korea',
+    url: 'https://sejong.ac.kr',
     bullets: [
       'Assist professors in Algorithms and Data Structures courses through problem-solving sessions, grading, and mentoring.',
       'Support debugging and code quality reviews to help students adopt best practices.',
@@ -149,6 +150,7 @@ export const experiences = [
     organization: 'JBRSOFT Limited Academy',
     period: 'Jan 2025 — Present',
     location: 'Remote',
+    url: 'https://academy.jbrsoft.com',
     bullets: [
       'Teach Python fundamentals, OOP, and AI applications to 15+ students from multiple universities.',
       'Design structured lesson plans that combine theory with real-world projects.',
@@ -160,6 +162,7 @@ export const experiences = [
     organization: 'Incell Bangladesh',
     period: 'Jun 2023 — Present',
     location: 'Remote',
+    url: 'https://incell.com.bd/',
     bullets: [
       'Manage full-stack development across product ordering, payment handling, and live chatbot support.',
       'Maintain PHP/MySQL infrastructure and coordinate releases with the development team.',
