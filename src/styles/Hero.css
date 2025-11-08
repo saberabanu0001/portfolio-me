@@ -33,7 +33,7 @@
 
 .hero-content {
   z-index: 1;
-  padding-left: clamp(1rem, 4vw, 2.5rem);
+  padding-left: 0;
 }
 
 .hero-greeting {
