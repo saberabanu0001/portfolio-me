@@ -62,7 +62,7 @@ export const projects = [
     liveUrl: undefined,
     repoUrl: 'https://github.com/saberabanu0001/NewCalmateAI',
     status: 'Featured',
-    image: '/images/calmmateai-dashboard.png',
+    image: '/calmate-ai-dashboard.png',
     imageAlt: 'CalmMateAI dashboard preview',
   },
   {

@@ -15,6 +15,11 @@ type Project = {
 
 const projectData: Project[] = projects
 
+const openExternal = (url?: string) => {
+  if (!url) return
+  window.open(url, '_blank', 'noopener,noreferrer')
+}
+
 const Projects = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 60 },
@@ -60,10 +65,22 @@ const Projects = () => {
           {projectData.map((project) => (
             <motion.div
               key={project.title}
-              className={`project-card ${project.status === 'Featured' ? 'featured' : ''}`}
+              className={`project-card ${project.status === 'Featured' ? 'featured' : ''} ${
+                project.repoUrl ? 'clickable' : ''
+              }`}
               variants={fadeInUp}
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
+              onClick={() => openExternal(project.repoUrl)}
+              role={project.repoUrl ? 'button' : undefined}
+              tabIndex={project.repoUrl ? 0 : undefined}
+              onKeyDown={(event) => {
+                if (!project.repoUrl) return
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault()
+                  openExternal(project.repoUrl)
+                }
+              }}
             >
               <div className="project-image">
                 <div className="project-overlay">
