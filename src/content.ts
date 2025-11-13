@@ -158,6 +158,18 @@ export const experiences = [
     ],
   },
   {
+    role: 'ML/AI Developer',
+    organization: 'JBRSOFT Limited',
+    period: '2023 — Present',
+    location: 'Remote',
+    url: 'https://jbrsoft.com',
+    bullets: [
+      'Develop machine learning and AI solutions for enterprise applications, focusing on NLP and data science.',
+      'Collaborate with cross-functional teams to build intelligent systems that solve real-world challenges.',
+      'Apply cutting-edge AI techniques to drive innovation and deliver impactful software solutions.',
+    ],
+  },
+  {
     role: 'Programmer',
     organization: 'Incell Bangladesh',
     period: 'Jun 2023 — Present',
