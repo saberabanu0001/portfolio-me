@@ -2,6 +2,7 @@ export const navigationLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Projects', href: '#projects' },
+  { name: 'Awards', href: '#awards' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
   { name: 'Education', href: '#education' },
@@ -198,6 +199,31 @@ export const activities = [
   'Maintaining a robotics and hardware learning journal during a four-month capstone journey.',
   'Leading community study groups on AI fundamentals and prompt engineering.',
   'Building calm technology prototypes to support student well-being.',
+]
+
+export const awards = [
+  {
+    title: 'Capstone Design Best Innovation Award',
+    project: 'Physical AI Assistant',
+    organization: 'Sejong University',
+    department: 'Department of Computer Science and Engineering',
+    date: 'December 12, 2025',
+    description:
+      'Awarded for outstanding excellence and superior performance in the 2025-2 Capstone Design course. Recognized for innovative work on a physical AI assistant robot with real-time vision, intelligent mobility, and human-robot interaction capabilities.',
+    teamMembers: [
+      'Samijonov Boymirzo',
+      'Toshtemirov Dilmurod',
+      'Sabera Banu',
+      'Shodmonova Nilyufar',
+      'Bakhtiyor Ganijon',
+    ],
+    image: '/awards.jpeg',
+    imageAlt: 'Capstone Design Best Innovation Award ceremony',
+    professors: [
+      { name: 'Abolghasem Sadeghi-Niaraki, Ph.D.', role: 'Associate Professor' },
+      { name: 'Rajendra Dhakal, Ph.D.', role: 'Associate Professor' },
+    ],
+  },
 ]
 
 export const contact = {

@@ -1,0 +1,235 @@
+.awards {
+  padding: clamp(80px, 10vh, 120px) 0;
+  background: var(--bg-secondary);
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.award-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.award-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), #a78bfa, var(--accent));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.award-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+}
+
+.award-card:hover::before {
+  opacity: 1;
+}
+
+.award-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(167, 139, 250, 0.2));
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 50px;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.award-icon {
+  font-size: 1.2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.award-badge-text {
+  letter-spacing: 0.5px;
+}
+
+.award-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.award-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.award-project,
+.award-organization,
+.award-date {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.award-label {
+  color: var(--accent);
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.award-description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  background: rgba(99, 102, 241, 0.05);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+}
+
+.award-image-wrapper {
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.award-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.award-image-wrapper:hover .award-image {
+  transform: scale(1.02);
+}
+
+.award-team,
+.award-professors {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.award-team-title,
+.award-professors-title {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.award-team-list,
+.award-professors-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.award-team-list li {
+  color: var(--text-secondary);
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.award-team-list li::before {
+  content: '👤';
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+}
+
+.award-team-list li.highlight {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.award-team-list li.highlight::before {
+  content: '⭐';
+}
+
+.award-professors-list li {
+  color: var(--text-secondary);
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.award-professors-list li::before {
+  content: '🎓';
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+}
+
+.award-professors-list li strong {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .award-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .award-title {
+    font-size: 1.5rem;
+  }
+
+  .award-project,
+  .award-organization,
+  .award-date {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .award-label {
+    min-width: auto;
+  }
+
+  .award-image-wrapper {
+    margin: 1rem 0;
+  }
+}
+

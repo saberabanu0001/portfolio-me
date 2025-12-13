@@ -1,6 +1,5 @@
 .contact {
-  padding: 100px 0;
-  background: var(--bg-secondary);
+  padding: clamp(80px, 10vh, 120px) 0;
   position: relative;
 }
 

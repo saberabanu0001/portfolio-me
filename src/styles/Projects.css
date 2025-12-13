@@ -1,20 +1,23 @@
 .projects {
-  padding: 100px 0;
+  padding: clamp(80px, 10vh, 120px) 0;
   position: relative;
+  background: var(--bg-secondary);
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .project-card {
   background: var(--card-bg);
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--border);
   transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-card.clickable {
@@ -23,6 +26,8 @@
 
 .project-card:hover {
   border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(99, 102, 241, 0.15);
 }
 
 .project-card.featured {

@@ -19,9 +19,7 @@
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
-  margin-left: clamp(5rem, 8vw, 7rem);
-  margin-right: clamp(2rem, 5vw, 3.5rem);
+  padding: 0 clamp(2rem, 5vw, 4rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,18 +53,20 @@
 
 .nav {
   display: flex;
-  gap: 3rem;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-link {
   color: var(--text-primary);
   text-decoration: none;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
   position: relative;
   transition: color 0.3s ease;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .nav-link::after {

@@ -1,83 +1,48 @@
 .about {
-  padding: 100px 0;
+  padding: clamp(80px, 10vh, 120px) 0;
   position: relative;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 clamp(1.5rem, 4vw, 3rem);
-}
-
-.section-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 3rem;
-  justify-content: center;
-  text-align: center;
-}
-
-.section-number {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--accent);
-}
-
-.section-title {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.section-line {
-  flex: 0 0 160px;
-  height: 1px;
-  background: var(--border);
-  max-width: none;
-}
 
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1fr;
+  gap: 3rem;
   align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .about-content.single-column {
   grid-template-columns: 1fr;
-  justify-items: center;
 }
 
 .about-content.single-column .about-text {
-  max-width: 720px;
-  text-align: center;
-  margin: 0 auto;
+  max-width: 900px;
+  text-align: left;
+  margin: 0;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 2rem;
 }
 
-.about-text p {
-  margin-bottom: 1.5rem;
+.about-text > p {
   color: var(--text-secondary);
-  line-height: 1.9;
-  font-size: 1.1rem;
-}
-
-.about-text p:last-of-type {
-  margin-bottom: 0;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin: 0;
 }
 
 .about-micro-intro {
   color: var(--accent);
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
 }
 
 .about-impact {
@@ -91,62 +56,71 @@
 
 .about-highlights {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .highlight-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.5rem;
-  display: grid;
-  gap: 0.4rem;
-  justify-items: start;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .highlight-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
+  box-shadow: 0 12px 24px rgba(99, 102, 241, 0.15);
 }
 
 .highlight-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .highlight-label {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
 }
 
 .highlight-value {
   font-weight: 600;
   color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .principles {
-  margin-top: 2.5rem;
-  background: rgba(99, 102, 241, 0.05);
-  border: 1px solid rgba(99, 102, 241, 0.15);
-  border-radius: 12px;
-  padding: 1.5rem;
+  margin-top: 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .principles h3 {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
   color: var(--text-primary);
+  font-weight: 600;
 }
 
 .principles ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
   padding-left: 0;
   margin: 0;
 }
@@ -154,9 +128,12 @@
 .principles li {
   position: relative;
   color: var(--text-secondary);
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  padding-left: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .principles li::before {
@@ -164,6 +141,7 @@
   position: absolute;
   left: 0;
   color: var(--accent);
+  font-size: 1.2rem;
 }
 
 .about-image {

@@ -23,18 +23,15 @@
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
-  margin-left: clamp(5rem, 8vw, 7.5rem);
-  margin-right: clamp(1.5rem, 4vw, 3rem);
-  padding: 0;
+  padding: 0 clamp(2rem, 5vw, 4rem);
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 1.5rem;
+  gap: 3rem;
   align-items: center;
 }
 
 .hero-content {
   z-index: 1;
-  padding-left: clamp(3rem, 6vw, 4rem);
 }
 
 .hero-greeting {
@@ -142,13 +139,13 @@
 
 .image-wrapper {
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: clamp(300px, 35vw, 450px);
+  height: clamp(300px, 35vw, 450px);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(20%);
+  margin: 0 auto;
 }
 
 .profile-photo {

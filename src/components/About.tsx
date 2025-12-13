@@ -47,6 +47,7 @@ const About = () => {
             <motion.p className="about-micro-intro" variants={fadeInUp}>
               {aboutContent.microIntro}
             </motion.p>
+            
             {aboutContent.paragraphs.map((paragraph) => (
               <motion.p key={paragraph.substring(0, 20)} variants={fadeInUp}>
                 {paragraph}

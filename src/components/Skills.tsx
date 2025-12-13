@@ -23,7 +23,7 @@ const Skills = () => {
           viewport={{ once: true, margin: '-100px' }}
           variants={fadeInUp}
         >
-          <span className="section-number">04.</span>
+          <span className="section-number">05.</span>
           <h2 className="section-title">Skills & Technologies</h2>
           <div className="section-line"></div>
         </motion.div>
