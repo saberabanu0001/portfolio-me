@@ -104,3 +104,235 @@ html {
   background: linear-gradient(90deg, var(--accent), transparent);
 }
 
+/* Print Styles for PDF Export */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  body {
+    background: white !important;
+    color: #1a1a1a !important;
+    font-size: 12pt;
+    line-height: 1.6;
+  }
+
+  /* Hide navigation and interactive elements */
+  .header,
+  .hero-cta,
+  .btn,
+  .scroll-indicator,
+  .menu-toggle,
+  .nav-link::after,
+  .project-overlay,
+  .contact-form,
+  .footer {
+    display: none !important;
+  }
+
+  /* Reset backgrounds to white/light */
+  .hero,
+  .about,
+  .projects,
+  .experience,
+  .skills,
+  .education,
+  .awards,
+  .contact {
+    background: white !important;
+    padding: 40px 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .projects,
+  .skills,
+  .awards,
+  .contact {
+    background: #f8f9fa !important;
+  }
+
+  /* Text colors for print */
+  h1, h2, h3, h4, h5, h6,
+  .section-title,
+  .hero-name,
+  .hero-title,
+  .project-title,
+  .experience-card-header h3,
+  .skill-card-header h3,
+  .award-title {
+    color: #1a1a1a !important;
+  }
+
+  .section-number {
+    color: #6366f1 !important;
+  }
+
+  .text-primary,
+  .hero-description,
+  .about-text p,
+  .project-description,
+  .experience-card li,
+  .highlight-value,
+  .award-description {
+    color: #333 !important;
+  }
+
+  .text-secondary,
+  .hero-meta,
+  .about-text p,
+  .project-tag,
+  .experience-meta,
+  .highlight-label {
+    color: #666 !important;
+  }
+
+  /* Cards and borders */
+  .card-bg,
+  .project-card,
+  .experience-card,
+  .skill-card,
+  .education-card,
+  .award-card,
+  .highlight-card,
+  .principles {
+    background: white !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+  }
+
+  .project-card:hover,
+  .experience-card:hover,
+  .skill-card:hover,
+  .education-card:hover,
+  .award-card:hover,
+  .highlight-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Section headers */
+  .section-header {
+    page-break-after: avoid;
+    margin-bottom: 20px !important;
+  }
+
+  .section-line {
+    background: #6366f1 !important;
+    max-width: 150px;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+
+  .profile-photo,
+  .award-image,
+  .project-image img {
+    border: 2px solid #ddd !important;
+    box-shadow: none !important;
+  }
+
+  /* Links */
+  a {
+    color: #6366f1 !important;
+    text-decoration: underline !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  /* Remove gradients and animations */
+  .gradient-text,
+  .gradient-orb,
+  .hero::before {
+    display: none !important;
+  }
+
+  /* Skills bars */
+  .skill-bar {
+    background: #e0e0e0 !important;
+    border: 1px solid #ddd !important;
+  }
+
+  .skill-progress {
+    background: #6366f1 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Page breaks */
+  .hero {
+    page-break-after: always;
+  }
+
+  .section-header {
+    page-break-after: avoid;
+  }
+
+  .project-card,
+  .experience-card {
+    page-break-inside: avoid;
+  }
+
+  /* Spacing adjustments */
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .hero-content {
+    padding-left: 0 !important;
+  }
+
+  .image-wrapper {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  /* Ensure visibility */
+  .about-highlights,
+  .projects-grid,
+  .experience-list,
+  .skills-grid {
+    display: grid !important;
+    gap: 15px !important;
+  }
+
+  /* Print-friendly colors */
+  .about-micro-intro {
+    color: #6366f1 !important;
+  }
+
+  .about-impact {
+    color: #1a1a1a !important;
+  }
+
+  .award-badge {
+    background: #f0f0f0 !important;
+    border: 1px solid #ddd !important;
+    color: #6366f1 !important;
+  }
+}
+
