@@ -137,25 +137,59 @@ html {
     display: none !important;
   }
 
-  /* Reset backgrounds to white/light */
-  .hero,
-  .about,
-  .projects,
-  .experience,
-  .skills,
-  .education,
-  .awards,
+  /* Reset backgrounds to white/light - ensure all sections are visible */
+  .hero {
+    background: white !important;
+    padding: 40px 0 !important;
+    min-height: auto !important;
+    page-break-after: always;
+  }
+
+  .about {
+    background: white !important;
+    padding: 40px 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .projects {
+    background: #f8f9fa !important;
+    padding: 40px 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .experience {
+    background: white !important;
+    padding: 40px 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .skills {
+    background: #f8f9fa !important;
+    padding: 40px 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .education {
+    background: white !important;
+    padding: 40px 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .awards {
+    background: #f8f9fa !important;
+    padding: 40px 0 !important;
+    page-break-inside: avoid;
+  }
+
   .contact {
     background: white !important;
     padding: 40px 0 !important;
     page-break-inside: avoid;
   }
 
-  .projects,
-  .skills,
-  .awards,
-  .contact {
-    background: #f8f9fa !important;
+  /* Ensure all containers have background */
+  .container {
+    background: transparent !important;
   }
 
   /* Text colors for print */
@@ -193,7 +227,7 @@ html {
     color: #666 !important;
   }
 
-  /* Cards and borders */
+  /* Cards and borders - ensure all have visible backgrounds */
   .card-bg,
   .project-card,
   .experience-card,
@@ -201,12 +235,24 @@ html {
   .education-card,
   .award-card,
   .highlight-card,
-  .principles {
+  .principles,
+  .activities,
+  .skills-bottom {
     background: white !important;
     border: 1px solid #ddd !important;
     box-shadow: none !important;
     page-break-inside: avoid;
     margin-bottom: 20px;
+    padding: 20px !important;
+  }
+
+  /* Ensure nested elements have backgrounds */
+  .project-content,
+  .experience-card-header,
+  .skill-card-header,
+  .education-card header,
+  .award-content {
+    background: transparent !important;
   }
 
   .project-card:hover,
@@ -275,24 +321,42 @@ html {
     print-color-adjust: exact;
   }
 
-  /* Page breaks */
+  /* Page breaks - better control */
   .hero {
     page-break-after: always;
   }
 
   .section-header {
     page-break-after: avoid;
+    page-break-inside: avoid;
   }
 
   .project-card,
-  .experience-card {
+  .experience-card,
+  .skill-card,
+  .education-card,
+  .award-card {
     page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Prevent empty pages */
+  .empty-page {
+    display: none !important;
   }
 
   /* Spacing adjustments */
   .container {
     max-width: 100% !important;
-    padding: 0 !important;
+    padding: 0 20px !important;
+    background: transparent !important;
+  }
+
+  /* Ensure body and html have proper background */
+  html, body {
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .hero-container {
@@ -311,13 +375,42 @@ html {
     transform: none !important;
   }
 
-  /* Ensure visibility */
+  /* Ensure visibility - force display of all content */
   .about-highlights,
   .projects-grid,
   .experience-list,
-  .skills-grid {
+  .skills-grid,
+  .education-grid,
+  .awards-grid,
+  .contact-content {
     display: grid !important;
     gap: 15px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Force all text to be visible */
+  p, li, span, div, h1, h2, h3, h4, h5, h6 {
+    color: #1a1a1a !important;
+    background: transparent !important;
+  }
+
+  /* Ensure all sections are visible */
+  section {
+    background: white !important;
+    color: #1a1a1a !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Fix any transparent or hidden elements */
+  [style*="opacity"],
+  [style*="transparent"],
+  [style*="display: none"] {
+    opacity: 1 !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
   /* Print-friendly colors */
