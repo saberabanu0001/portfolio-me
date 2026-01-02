@@ -26,7 +26,7 @@ export const aboutContent = {
   heading: 'About Sabera',
   microIntro: '🚀 Passionate about turning data into intelligent, human-centered AI solutions.',
   paragraphs: [
-    'I'm an international Computer Science student at Sejong University and a Junior Python Developer at JBRSOFT Limited. I'm passionate about transforming research-driven ideas into intelligent, human-centered AI products.',
+    "I'm an international Computer Science student at Sejong University and a Junior Python Developer at JBRSOFT Limited. I'm passionate about transforming research-driven ideas into intelligent, human-centered AI products.",
     'As a Teaching Assistant at Sejong University and a contributor to the Physical AI Assistant robotics project, I thrive at the intersection of computer vision, intelligent mobility, human-robot interaction, and thoughtful product design.',
   ],
   impact: 'Our robotics system combines real-time vision processing, intelligent navigation, and natural interaction capabilities to create practical AI solutions that bridge the physical and digital worlds.',
