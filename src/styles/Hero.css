@@ -131,6 +131,18 @@
   transform: translateY(-2px);
 }
 
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--border);
+}
+
+.btn-outline:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
 .hero-image {
   display: flex;
   justify-content: flex-end;

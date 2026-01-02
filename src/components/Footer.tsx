@@ -4,6 +4,10 @@ import { contact } from '../content'
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
+  const handleDownloadPDF = () => {
+    window.print()
+  }
+
   const icons = {
     github: Github,
     linkedin: LinkedIn,
@@ -36,6 +40,9 @@ const Footer = () => {
               <Email />
             </a>
           </div>
+          <button onClick={handleDownloadPDF} className="btn-download-pdf">
+            📄 Download Portfolio PDF
+          </button>
           <p className="footer-text">
             Designed & Built by <span className="highlight">Sabera Banu</span>
           </p>

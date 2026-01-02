@@ -31,6 +31,10 @@ const Hero = () => {
     .replace('Sejong University', '<span class="text-highlight">Sejong University</span>')
     .replace('JBRSOFT Limited', '<span class="text-highlight">JBRSOFT Limited</span>')
 
+  const handleDownloadPDF = () => {
+    window.print()
+  }
+
   return (
     <section id="home" className="hero">
       <motion.div
@@ -57,6 +61,9 @@ const Hero = () => {
             <a href={heroContent.secondaryCta.href} className="btn btn-secondary">
               {heroContent.secondaryCta.label}
             </a>
+            <button onClick={handleDownloadPDF} className="btn btn-outline">
+              📄 Download PDF
+            </button>
           </div>
         </motion.div>
 
