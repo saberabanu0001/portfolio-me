@@ -26,10 +26,10 @@ export const aboutContent = {
   heading: 'About Sabera',
   microIntro: '🚀 Passionate about turning data into intelligent, human-centered AI solutions.',
   paragraphs: [
-    'I’m an international Computer Science student at Sejong University and a Junior Python Developer at JBRSOFT Limited. I’m passionate about transforming research-driven ideas into intelligent, human-centered AI products.',
-    'As the team lead for PDF Quizzard and other AI initiatives, I thrive at the intersection of natural language processing, retrieval-augmented generation, and thoughtful product design.',
+    'I'm an international Computer Science student at Sejong University and a Junior Python Developer at JBRSOFT Limited. I'm passionate about transforming research-driven ideas into intelligent, human-centered AI products.',
+    'As the team lead for the Physical AI Assistant robotics project and other AI initiatives, I thrive at the intersection of computer vision, intelligent mobility, human-robot interaction, and thoughtful product design.',
   ],
-  impact: 'Our tools have helped automate quiz creation for educators and streamline data workflows.',
+  impact: 'Our robotics system combines real-time vision processing, intelligent navigation, and natural interaction capabilities to create practical AI solutions that bridge the physical and digital worlds.',
   personalNote: 'Beyond coding, I love mentoring students and exploring how AI can make learning more inclusive.',
   highlights: [
     { label: 'Focus', value: 'AI, NLP & retrieval-augmented experiences', icon: '🧠' },
