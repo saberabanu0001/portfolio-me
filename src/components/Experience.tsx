@@ -38,6 +38,11 @@ const Experience = () => {
               viewport={{ once: true, margin: '-100px' }}
               variants={fadeInUp}
             >
+              {experience.image && (
+                <div className="experience-image">
+                  <img src={experience.image} alt={experience.imageAlt || `${experience.role} at ${experience.organization}`} />
+                </div>
+              )}
               <header className="experience-card-header">
                 <div>
                   <h3>{experience.role}</h3>

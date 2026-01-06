@@ -140,6 +140,8 @@ export const experiences = [
     period: 'Sep 2024 — Present',
     location: 'Seoul, South Korea',
     url: 'https://sejong.ac.kr',
+    image: '/teaching-assistant-classroom.jpeg',
+    imageAlt: 'Sabera Banu teaching students in a computer lab as a Teaching Assistant at Sejong University',
     bullets: [
       'Assist professors in Algorithms and Data Structures courses through problem-solving sessions, grading, and mentoring.',
       'Support debugging and code quality reviews to help students adopt best practices.',

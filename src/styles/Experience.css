@@ -32,6 +32,22 @@
   flex-wrap: wrap;
 }
 
+.experience-image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  max-height: 260px;
+}
+
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+}
+
 .experience-card-header h3 {
   font-size: 1.35rem;
   color: var(--text-primary);
