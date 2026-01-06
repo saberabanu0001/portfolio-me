@@ -121,18 +121,16 @@
 }
 
 .award-image-wrapper {
-  margin: 1.25rem 0;
+  margin: 1.5rem 0;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--border);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-  max-height: 260px; /* Limit vertical size so it doesn't dominate the section */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .award-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Keep focus while cropping vertically */
+  height: auto;
   display: block;
   transition: transform 0.3s ease;
 }
