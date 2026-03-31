@@ -73,18 +73,34 @@
 <tr>
 <td width="50%">
 
-### 🤖 PDF Quizzard
-*AI-powered Quiz Generator from Research PDFs*
+### 🤖 Capstone Robotics Project
+*Physical AI Assistant Vision System*
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![NLP](https://img.shields.io/badge/NLP-LangChain-blue)
-![RAG](https://img.shields.io/badge/RAG-Retrieval%20Augmented-green)
+![Vision](https://img.shields.io/badge/Computer%20Vision-PyTorch-EE4C2C)
+![Robotics](https://img.shields.io/badge/Robotics-Autonomous-blue)
 
-> Transform dense research PDFs into interactive quiz questions using NLP and RAG pipelines.
+> Award-winning physical AI assistant robot with real-time vision, intelligent mobility, and natural interaction.
 
-[![GitHub](https://img.shields.io/badge/GitHub-View-181717?style=flat&logo=github)](https://github.com/saberabanu0001/EduPDF-Quiz-Maker)
+[![GitHub](https://img.shields.io/badge/GitHub-View-181717?style=flat&logo=github)](https://github.com/saberabanu0001/CapstoneRoboticsProject)
 
 </td>
+<td width="50%">
+
+### 🎓 ApplySmart
+*AI Scholarship Discovery Agent*
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![AI](https://img.shields.io/badge/AI-Agents-purple)
+![NLP](https://img.shields.io/badge/NLP-LangChain-blue)
+
+> Personal AI agent analyzing student profiles to find, rank, and help apply for suitable scholarships.
+
+[![GitHub](https://img.shields.io/badge/GitHub-View-181717?style=flat&logo=github)](https://github.com/saberabanu0001/ApplySmart)
+
+</td>
+</tr>
+<tr>
 <td width="50%">
 
 ### 💬 CalmMateAI
@@ -99,8 +115,6 @@
 [![GitHub](https://img.shields.io/badge/GitHub-View-181717?style=flat&logo=github)](https://github.com/saberabanu0001/NewCalmateAI)
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 ### 📰 EventBuddy
@@ -114,21 +128,15 @@
 [![GitHub](https://img.shields.io/badge/GitHub-View-181717?style=flat&logo=github)](https://github.com/saberabanu0001/EventBuddy)
 
 </td>
-<td width="50%">
-
-### 👕 University Jacket Ordering Platform
-*Web-based Ordering System*
-
-![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
-
-> Streamlined platform for university members to order jackets with authentication and order management.
-
-[![GitHub](https://img.shields.io/badge/GitHub-View-181717?style=flat&logo=github)](https://github.com/saberabanu0001/UniversityJackedOrderingPlatform)
-
-</td>
 </tr>
 </table>
+
+<div align="center">
+  <br />
+  <a href="https://github.com/saberabanu0001?tab=repositories">
+    <img src="https://img.shields.io/badge/View%20All%20Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="View All Repositories" />
+  </a>
+</div>
 
 ---
 

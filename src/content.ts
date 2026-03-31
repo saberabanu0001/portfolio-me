@@ -45,12 +45,23 @@ export const aboutContent = {
 
 export const projects = [
   {
-    title: 'PDF Quizzard',
+    title: 'Capstone Robotics Project',
     description:
-      'AI-powered quiz generator that transforms dense research PDFs into study-ready questions. Led the 4-person team, built retrieval-augmented pipelines, and improved quiz accuracy through evaluation loops.',
-    tags: ['Python', 'NLP', 'LangChain', 'RAG'],
+      'Physical AI Assistant robot with real-time vision, intelligent mobility, and human-robot interaction capabilities. Award-winning project recognized for innovation in AI-driven physical assistants.',
+    tags: ['Python', 'Computer Vision', 'Robotics', 'NLP'],
     liveUrl: undefined,
-    repoUrl: 'https://github.com/saberabanu0001/EduPDF-Quiz-Maker',
+    repoUrl: 'https://github.com/saberabanu0001/CapstoneRoboticsProject',
+    status: 'Award Winner',
+    image: '/robot.jpg',
+    imageAlt: 'Physical AI Assistant robot with computer vision sensors',
+  },
+  {
+    title: 'ApplySmart',
+    description:
+      'Personal AI scholarship assistant that analyzes student profiles (CV, GitHub, goals) to find, rank, and explain suitable scholarship options while generating application materials.',
+    tags: ['Python', 'AI Agents', 'NLP', 'Scholarship Help'],
+    liveUrl: undefined,
+    repoUrl: 'https://github.com/saberabanu0001/ApplySmart',
     status: 'Featured',
     image: undefined,
     imageAlt: undefined,
@@ -67,17 +78,6 @@ export const projects = [
     imageAlt: 'CalmMateAI dashboard preview',
   },
   {
-    title: 'University Jacket Ordering Platform',
-    description:
-      'Responsive PHP platform that streamlines ordering, tracking, and managing university jackets with authentication, catalog browsing, and contact support workflows.',
-    tags: ['PHP', 'MySQL', 'HTML', 'CSS'],
-    liveUrl: undefined,
-    repoUrl: 'https://github.com/saberabanu0001/UniversityJackedOrderingPlatform',
-    status: 'Case Study',
-    image: undefined,
-    imageAlt: undefined,
-  },
-  {
     title: 'EventBuddy',
     description:
       'University-wide information hub delivering campus news and events through curated dashboards and a lightweight content management workflow.',
@@ -85,17 +85,6 @@ export const projects = [
     liveUrl: undefined,
     repoUrl: 'https://github.com/saberabanu0001',
     status: 'In progress',
-  },
-  {
-    title: 'JobConnect',
-    description:
-      'CLI-based job management platform connecting international students with part-time opportunities, featuring SQLite storage and workflow automation.',
-    tags: ['C++', 'SQLite'],
-    liveUrl: undefined,
-    repoUrl: 'https://github.com/saberabanu0001/JobConnect',
-    status: 'Case Study',
-    image: undefined,
-    imageAlt: undefined,
   },
 ]
 
