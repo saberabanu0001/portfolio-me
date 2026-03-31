@@ -87,6 +87,22 @@
 </td>
 <td width="50%">
 
+### 🩺 PrescriptionPro
+*AI-powered Clinic Management App*
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Vision](https://img.shields.io/badge/Vision-Groq%20API-6366f1)
+![Mobile](https://img.shields.io/badge/Mobile-Expo%2FReact%20Native-blue)
+
+> OCR and VLM based tool to digitize handwritten prescriptions and extract clinical data.
+
+[![GitHub](https://img.shields.io/badge/GitHub-View-181717?style=flat&logo=github)](https://github.com/saberabanu0001/PrescriptionPro)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
 ### 🎓 ApplySmart
 *AI Scholarship Discovery Agent*
 
@@ -99,8 +115,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-View-181717?style=flat&logo=github)](https://github.com/saberabanu0001/ApplySmart)
 
 </td>
-</tr>
-<tr>
+
 <td width="50%">
 
 ### 💬 CalmMateAI
@@ -115,7 +130,9 @@
 [![GitHub](https://img.shields.io/badge/GitHub-View-181717?style=flat&logo=github)](https://github.com/saberabanu0001/NewCalmateAI)
 
 </td>
-<td width="50%">
+</tr>
+<tr>
+<td colspan="2" align="center">
 
 ### 📰 EventBuddy
 *University News Hub for Sejong*

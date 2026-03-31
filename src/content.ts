@@ -82,9 +82,19 @@ export const projects = [
     description:
       'University-wide information hub delivering campus news and events through curated dashboards and a lightweight content management workflow.',
     tags: ['Python', 'Django', 'Product Strategy'],
-    liveUrl: undefined,
     repoUrl: 'https://github.com/saberabanu0001',
     status: 'In progress',
+  },
+  {
+    title: 'PrescriptionPro',
+    description:
+      'AI-powered clinic management tool that digitizes handwritten medical prescriptions using Vision Language Models (VLMs) and the Groq API to extract structured patient and medication data.',
+    tags: ['FastAPI', 'React Native', 'Groq API', 'Vision AI', 'Docker'],
+    liveUrl: 'https://v0-prescription-pro.vercel.app',
+    repoUrl: 'https://github.com/saberabanu0001/PrescriptionPro',
+    status: 'Production',
+    image: undefined,
+    imageAlt: undefined,
   },
 ]
 
