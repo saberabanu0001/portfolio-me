@@ -152,8 +152,8 @@
 |------|---------|--------|
 | 🎓 **Teaching Assistant** | Sejong University | Sep 2024 - Present |
 | 📚 **Python Instructor** | JBRSOFT Limited Academy | Jan 2025 - Present |
-| 🤖 **ML/AI Developer** | JBRSOFT Limited | 2023 - Present |
-| 💻 **Programmer** | Incell Bangladesh | Jun 2023 - Present |
+| 🤖 **ML/AI Developer** | JBRSOFT Limited | 2024 - Present |
+| 💻 **Programmer** | Incell Bangladesh | Jun 2024 - Present |
 
 ---
 

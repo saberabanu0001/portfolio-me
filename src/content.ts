@@ -163,7 +163,7 @@ export const experiences = [
   {
     role: 'ML/AI Developer',
     organization: 'JBRSOFT Limited',
-    period: '2023 — Present',
+    period: '2024 — Present',
     location: 'Remote',
     url: 'https://jbrsoft.com',
     bullets: [
@@ -175,7 +175,7 @@ export const experiences = [
   {
     role: 'Programmer',
     organization: 'Incell Bangladesh',
-    period: 'Jun 2023 — Present',
+    period: 'Jun 2024 — Present',
     location: 'Remote',
     url: 'https://incell.com.bd/',
     bullets: [
