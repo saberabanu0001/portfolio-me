@@ -219,7 +219,7 @@ export const awards = [
       'Shodmonova Nilyufar',
       'Bakhtiyor Ganijon',
     ],
-    image: '/awards.jpeg',
+    image: '/awards.jpg',
     imageAlt: 'Capstone Design Best Innovation Award ceremony',
     professors: [
       { name: 'Abolghasem Sadeghi-Niaraki, Ph.D.', role: 'Associate Professor' },
