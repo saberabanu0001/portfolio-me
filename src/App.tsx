@@ -7,6 +7,7 @@ import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Education from './components/Education'
 import Awards from './components/Awards'
+import Hackathons from './components/Hackathons'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -28,6 +29,7 @@ function App() {
       <About />
       <Projects />
       <Awards />
+      <Hackathons />
       <Experience />
       <Skills />
       <Education />

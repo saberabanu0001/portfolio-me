@@ -3,6 +3,7 @@ export const navigationLinks = [
   { name: 'About', href: '#about' },
   { name: 'Projects', href: '#projects' },
   { name: 'Awards', href: '#awards' },
+  { name: 'Hackathons', href: '#hackathons' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
   { name: 'Education', href: '#education' },
@@ -56,13 +57,13 @@ export const projects = [
     imageAlt: 'Physical AI Assistant robot with computer vision sensors',
   },
   {
-    title: 'ApplySmart',
+    title: 'ApplySmart (Trae Hackathon)',
     description:
-      'Personal AI scholarship assistant that analyzes student profiles (CV, GitHub, goals) to find, rank, and explain suitable scholarship options while generating application materials.',
-    tags: ['Python', 'AI Agents', 'NLP', 'Scholarship Help'],
+      'A multi-agent AI system designed to help international students navigate scholarship applications. Featuring a "Critic Agent" that analyzes CVs and goals to block unsuitable applications while recommending optimal paths and generating tailored documents.',
+    tags: ['FastAPI', 'Multi-agent Systems', 'LLM Reasoning', 'Tailwind'],
     liveUrl: undefined,
     repoUrl: 'https://github.com/saberabanu0001/ApplySmart',
-    status: 'Featured',
+    status: 'Hackathon Project',
     image: undefined,
     imageAlt: undefined,
   },
@@ -224,6 +225,46 @@ export const awards = [
       { name: 'Abolghasem Sadeghi-Niaraki, Ph.D.', role: 'Associate Professor' },
       { name: 'Rajendra Dhakal, Ph.D.', role: 'Associate Professor' },
     ],
+  },
+]
+
+export const hackathons = [
+  {
+    event: 'Trae Hackathon',
+    project: 'ApplySmart',
+    description:
+      'Built a multi-agent AI system that acts as a personal scholarship advisor. It analyzes student profiles (GitHub, CV, goals) to match, rank, and block unsuitable applications using a "Critic Agent" for smarter decision-making.',
+    tech: ['FastAPI', 'Multi-agent Systems', 'LLM Reasoning'],
+    date: 'March 2026',
+    status: 'Featured Project',
+  },
+  {
+    event: 'Gemini 3 Seoul Hackathon',
+    organization: 'Google DeepMind & Cerebral Valley',
+    description:
+      'Selected as one of 250 participants from 1,000+ applicants to build AI solutions using Google’s Gemini models. Focused on high-speed prototyping and leveraging state-of-the-art vision and language capabilities.',
+    tech: ['Gemini API', 'Google Cloud', 'AI Prototyping'],
+    date: 'February 2026',
+    status: 'Selected Participant',
+  },
+  {
+    event: 'World Build Korea Hackathon',
+    organization: 'Worldcoin (Tools for Humanity)',
+    project: 'INHUMAN',
+    description:
+      'Explored human-centric digital systems using World ID to distinguish real humans from bots. Built "INHUMAN" to enable human-only access to digital reviews and rewards while ensuring user privacy.',
+    tech: ['World ID', 'Web3', 'Authentication'],
+    date: '2025',
+    status: 'Innovation Track',
+  },
+  {
+    event: 'ITX Healthcare Hackathon',
+    project: 'Medi Port AI',
+    description:
+      'Prototyped a patient-centric medical assistant designed to simplify complex medical jargon and improve access to healthcare information for the general public.',
+    tech: ['NLP', 'Healthcare AI', 'UI/UX'],
+    date: '2024',
+    status: 'Prototype Phase',
   },
 ]
 

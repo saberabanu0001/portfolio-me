@@ -157,6 +157,22 @@
 
 ---
 
+## 🏆 Hackathons & Awards
+
+<div align="center">
+
+| Event | Organization | Status | Year |
+|-------|--------------|--------|------|
+| 🎓 **Capstone Design** | Sejong University | 🥇 Best Innovation Award | 2025 |
+| 🚀 **Trae Hackathon** | Trae AI | 💡 ApplySmart (Multi-Agent System) | 2026 |
+| 🤖 **Gemini 3 Seoul** | Google DeepMind | ⭐ Selected Participant | 2026 |
+| 💡 **World Build Korea** | Worldcoin | 🛠️ INHUMAN (Digital Identity) | 2025 |
+| 🩺 **ITX Healthcare** | ITX | 🏥 Medi Port AI (Medical Assistant) | 2024 |
+
+</div>
+
+---
+
 ## 📊 GitHub Analytics
 
 <div align="center">
