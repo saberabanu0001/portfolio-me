@@ -33,7 +33,7 @@ export const aboutContent = {
   impact: 'Our robotics system combines real-time vision processing, intelligent navigation, and natural interaction capabilities to create practical AI solutions that bridge the physical and digital worlds.',
   personalNote: 'Beyond coding, I love mentoring students and exploring how AI can make learning more inclusive.',
   highlights: [
-    { label: 'Focus', value: 'AI, NLP & retrieval-augmented experiences', icon: '🧠' },
+    { label: 'Focus', value: 'Agentic AI, NLP & RAG experiences', icon: '🤖' },
     { label: 'Currently Learning', value: 'Computer Vision and LangChain', icon: '📚' },
     { label: 'Strength', value: 'Empathetic leadership & clear communication', icon: '💬' },
   ],
@@ -124,8 +124,17 @@ export const skills = {
       ],
     },
   ],
-  softSkills: ['Team Leadership', 'Mentoring', 'Public Speaking', 'Research Translation'],
-  learning: ['Computer Vision', 'Advanced LangChain orchestration'],
+  softSkills: [
+    'Team Leadership',
+    'Mentoring',
+    'Public Speaking',
+    'Research Translation',
+  ],
+  learning: [
+    'Agentic AI Systems',
+    'Computer Vision',
+    'Advanced LangChain orchestration',
+  ],
 }
 
 export const experiences = [

@@ -18,7 +18,7 @@
 ## 👨‍💻 About Me
 
 - 🎓 **Computer Science Student** at Sejong University, Seoul, South Korea
-- 🤖 **ML/AI Developer** specializing in Natural Language Processing and Large Language Models
+- 🤖 **ML/AI Developer** specializing in **Agentic AI**, NLP, and Large Language Models
 - 💼 **Junior Python Developer** at JBRSOFT Limited, working on NLP and RAG projects
 - 🎯 **Passionate** about solving real-world problems through AI and accessible digital products
 - 📚 Currently learning **Computer Vision** and deepening my knowledge in **LangChain & RAG pipelines**
@@ -227,6 +227,7 @@
 
 ## 📈 Currently Learning
 
+- 🤖 **Agentic AI Systems** - Building autonomous and multi-agent AI ecosystems
 - 🧠 **Computer Vision** - Exploring image processing and computer vision techniques
 - 🔗 **Advanced LangChain** - Deepening knowledge in RAG pipelines and orchestration
 - 📚 **Microservices Architecture** - Learning scalable system design patterns
