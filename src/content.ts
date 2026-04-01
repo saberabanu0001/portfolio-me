@@ -37,11 +37,6 @@ export const aboutContent = {
     { label: 'Currently Learning', value: 'Computer Vision and LangChain', icon: '📚' },
     { label: 'Strength', value: 'Empathetic leadership & clear communication', icon: '💬' },
   ],
-  principles: [
-    { icon: '🎧', text: 'Listen first. Build second.' },
-    { icon: '📊', text: 'Measure the impact.' },
-    { icon: '🌱', text: 'Keep learning always.' },
-  ],
 }
 
 export const projects = [
