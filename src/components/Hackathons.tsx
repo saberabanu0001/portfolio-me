@@ -66,6 +66,16 @@ const Hackathons = () => {
                                 )}
                                 <p className="hackathon-description">{item.description}</p>
 
+                                {item.image && (
+                                    <div className="hackathon-image-wrapper">
+                                        <img
+                                            src={item.image}
+                                            alt={item.imageAlt ?? `${item.event} photo`}
+                                            className="hackathon-image"
+                                        />
+                                    </div>
+                                )}
+
                                 <div className="hackathon-tech">
                                     {item.tech.map((tech, idx) => (
                                         <span key={idx} className="tech-tag">

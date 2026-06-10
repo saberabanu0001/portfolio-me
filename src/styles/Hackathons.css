@@ -83,6 +83,19 @@
   margin: 0.75rem 0;
 }
 
+.hackathon-image-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.hackathon-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .hackathon-tech {
   display: flex;
   flex-wrap: wrap;

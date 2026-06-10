@@ -30,7 +30,7 @@ export const aboutContent = {
     "I'm an international Computer Science student at Sejong University and a Junior Python Developer at JBRSOFT Limited. I'm passionate about transforming research-driven ideas into intelligent, human-centered AI products.",
     'As a Teaching Assistant at Sejong University and a contributor to the Physical AI Assistant robotics project, I thrive at the intersection of computer vision, intelligent mobility, human-robot interaction, and thoughtful product design.',
   ],
-  impact: 'Our robotics system combines real-time vision processing, intelligent navigation, and natural interaction capabilities to create practical AI solutions that bridge the physical and digital worlds.',
+  impact: 'Our robotics system integrates Agentic AI, real-time vision processing, and intelligent navigation to create autonomous physical assistants that bridge the physical and digital worlds.',
   personalNote: 'Beyond coding, I love mentoring students and exploring how AI can make learning more inclusive.',
   highlights: [
     { label: 'Focus', value: 'Agentic AI, NLP & RAG experiences', icon: '🤖' },
@@ -233,6 +233,17 @@ export const awards = [
 ]
 
 export const hackathons = [
+  {
+    event: 'Cursor Hackathon Seoul',
+    organization: 'Cursor Community',
+    description:
+      'Joined the 2nd Cursor Hackathon in Seoul to build and ship an AI-native product in a single day. Collaborated with local builders, pitched live demos, and leveraged Cursor’s AI-assisted workflows for rapid prototyping.',
+    tech: ['Cursor', 'AI-assisted Development', 'Rapid Prototyping'],
+    date: 'April 2026',
+    status: 'Community Builder',
+    image: '/hackathons/cursor-hackathon.png',
+    imageAlt: 'Sabera Banu presenting a project during Cursor Hackathon Seoul',
+  },
   {
     event: 'Trae Hackathon',
     project: 'ApplySmart',
