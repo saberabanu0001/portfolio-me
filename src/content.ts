@@ -74,12 +74,13 @@ export const projects = [
     imageAlt: 'CalmMateAI dashboard preview',
   },
   {
-    title: 'EventBuddy',
+    title: 'Unistep',
     description:
-      'University-wide information hub delivering campus news and events through curated dashboards and a lightweight content management workflow.',
-    tags: ['Python', 'Django', 'Product Strategy'],
-    repoUrl: 'https://github.com/saberabanu0001',
+      'AI-driven academic intelligence platform that helps students find study abroad scholarships, professors, and universities. Uses neural matching to align profiles with institutional funding, mentorship, and outreach tools.',
+    tags: ['AI', 'Study Abroad', 'Scholarships', 'Neural Matching'],
     status: 'In progress',
+    image: '/unistep.png',
+    imageAlt: 'Unistep landing page with AI-driven scholarship and university matching dashboard',
   },
   {
     title: 'PrescriptionPro',
