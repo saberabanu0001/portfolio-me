@@ -254,6 +254,8 @@ export const hackathons = [
     tech: ['FastAPI', 'Multi-agent Systems', 'LLM Reasoning'],
     date: 'March 2026',
     status: 'Featured Project',
+    image: '/hackathons/trae-hackathon.png',
+    imageAlt: 'Team photo at Trae Hackathon with TRAE branding and Share Value, Grow Together backdrop',
   },
   {
     event: 'Gemini 3 Seoul Hackathon',
