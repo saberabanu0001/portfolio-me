@@ -70,7 +70,7 @@ const Hackathons = () => {
                                     <div className="hackathon-image-wrapper">
                                         <img
                                             src={item.image}
-                                            alt={item.imageAlt ?? `${item.event} photo`}
+                                            alt={item.imageAlt ?? 'Hackathon event photo'}
                                             className="hackathon-image"
                                         />
                                     </div>
