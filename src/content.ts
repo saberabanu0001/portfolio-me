@@ -76,9 +76,11 @@ export const projects = [
   {
     title: 'Unistep',
     description:
-      'AI-driven academic intelligence platform that helps students find study abroad scholarships, professors, and universities. Uses neural matching to align profiles with institutional funding, mentorship, and outreach tools.',
-    tags: ['AI', 'Study Abroad', 'Scholarships', 'Neural Matching'],
-    status: 'In progress',
+      'AI-powered scholarship discovery platform with a LangGraph multi-agent system: an Orchestrator delegates to Discovery, Professor, Email Drafting, and Follow-up agents to rank funding matches, score professor hiring confidence, generate personalized outreach, and automate 7/14/21-day follow-ups. Includes a Kanban application tracker, smart deadline alerts, and a 4-step journey wizard. Built with React, Spring Boot, FastAPI, MySQL, Redis, and Docker Compose.',
+    tags: ['LangGraph', 'Spring Boot', 'FastAPI', 'React', 'Multi-agent AI'],
+    liveUrl: 'https://www.unistep.digital',
+    repoUrl: 'https://github.com/saberabanu0001/Unistep-spring',
+    status: 'Production',
     image: '/unistep.png',
     imageAlt: 'Unistep landing page with AI-driven scholarship and university matching dashboard',
   },
