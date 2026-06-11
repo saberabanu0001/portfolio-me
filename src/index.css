@@ -137,6 +137,27 @@ html {
   background: linear-gradient(90deg, var(--accent), transparent);
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .section-header {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    white-space: normal;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .section-line {
+    display: none;
+  }
+}
+
 /* Print Styles for PDF Export */
 @media print {
   * {

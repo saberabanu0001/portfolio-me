@@ -147,29 +147,43 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 1rem 0;
+  }
+
+  .header-container {
+    padding: 0 1.25rem;
+  }
+
+  .logo-mark {
+    width: 56px;
+    height: 56px;
+  }
+
+  .logo-mark span {
+    font-size: 1.15rem;
+  }
+
   .menu-toggle {
     display: flex;
   }
 
   .nav {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     background: var(--bg-secondary);
     flex-direction: column;
-    padding: 2rem;
-    gap: 1.5rem;
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
+    padding: 1.5rem;
+    gap: 1.25rem;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 12px 24px var(--shadow-color);
   }
 
   .nav.open {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: all;
+    display: flex;
   }
 }
 
