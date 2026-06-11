@@ -275,6 +275,8 @@ export const hackathons = [
     tech: ['World ID', 'Web3', 'Authentication'],
     date: '2025',
     status: 'Innovation Track',
+    image: '/hackathons/world-build.png',
+    imageAlt: 'Team photo at World Build Korea Hackathon with laptops and handprint wall backdrop',
   },
   {
     event: 'ITX Healthcare Hackathon',
