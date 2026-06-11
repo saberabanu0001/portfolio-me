@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
+    <script>
+      (function () {
+        var theme = localStorage.getItem('portfolio-theme');
+        if (theme === 'light' || theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', theme);
+        }
+      })();
+    </script>
     <meta charset="UTF-8" />
     <link rel="canonical" href="https://saberabanu.info/" />
     <link rel="icon" href="https://saberabanu.info/favicon.ico" sizes="any" />

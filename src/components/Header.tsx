@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { navigationLinks } from '../content'
+import { useTheme } from '../hooks/useTheme'
 
 interface HeaderProps {
   isScrolled: boolean
@@ -7,6 +8,7 @@ interface HeaderProps {
 
 const Header = ({ isScrolled }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { theme, toggleTheme } = useTheme()
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
@@ -46,15 +48,27 @@ const Header = ({ isScrolled }: HeaderProps) => {
           ))}
         </nav>
 
-        <button
-          className="menu-toggle"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className={isMenuOpen ? 'open' : ''}></span>
-          <span className={isMenuOpen ? 'open' : ''}></span>
-          <span className={isMenuOpen ? 'open' : ''}></span>
-        </button>
+        <div className="header-actions">
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
+
+          <button
+            className="menu-toggle"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={isMenuOpen ? 'open' : ''}></span>
+            <span className={isMenuOpen ? 'open' : ''}></span>
+            <span className={isMenuOpen ? 'open' : ''}></span>
+          </button>
+        </div>
       </div>
     </header>
   )

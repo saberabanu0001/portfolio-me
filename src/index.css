@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-:root {
+:root,
+[data-theme='dark'] {
   --bg-primary: #0a0a0a;
   --bg-secondary: #111111;
   --text-primary: #ffffff;
@@ -13,6 +14,38 @@
   --accent-hover: #4f46e5;
   --border: #1f1f1f;
   --card-bg: #151515;
+  --header-scrolled-bg: rgba(10, 10, 10, 0.8);
+  --hero-meta-bg: rgba(10, 10, 10, 0.6);
+  --image-surface: #f8fafc;
+  --overlay-bg: rgba(10, 10, 10, 0.9);
+  --tag-bg: rgba(255, 255, 255, 0.03);
+  --shadow-color: rgba(99, 102, 241, 0.15);
+}
+
+[data-theme='light'] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --border: #e2e8f0;
+  --card-bg: #ffffff;
+  --header-scrolled-bg: rgba(255, 255, 255, 0.9);
+  --hero-meta-bg: rgba(255, 255, 255, 0.85);
+  --image-surface: #f1f5f9;
+  --overlay-bg: rgba(15, 23, 42, 0.85);
+  --tag-bg: rgba(99, 102, 241, 0.06);
+  --shadow-color: rgba(99, 102, 241, 0.12);
+}
+
+[data-theme='light'] .project-card,
+[data-theme='light'] .hackathon-card,
+[data-theme='light'] .experience-card,
+[data-theme='light'] .award-card,
+[data-theme='light'] .skill-card,
+[data-theme='light'] .education-card {
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
 }
 
 body {
