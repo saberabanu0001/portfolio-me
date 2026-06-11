@@ -265,6 +265,8 @@ export const hackathons = [
     tech: ['Gemini API', 'Google Cloud', 'AI Prototyping'],
     date: 'February 2026',
     status: 'Selected Participant',
+    image: '/hackathons/gemini-hackathon.png',
+    imageAlt: 'Participants collaborating with laptops at Gemini 3 Seoul Hackathon',
   },
   {
     event: 'World Build Korea Hackathon',
