@@ -52,6 +52,17 @@ export const projects = [
     imageAlt: 'Physical AI Assistant robot with computer vision sensors',
   },
   {
+    title: 'Unistep',
+    description:
+      'AI-powered scholarship discovery platform with a LangGraph multi-agent system: an Orchestrator delegates to Discovery, Professor, Email Drafting, and Follow-up agents to rank funding matches, score professor hiring confidence, generate personalized outreach, and automate 7/14/21-day follow-ups. Includes a Kanban application tracker, smart deadline alerts, and a 4-step journey wizard. Built with React, Spring Boot, FastAPI, MySQL, Redis, and Docker Compose.',
+    tags: ['LangGraph', 'Spring Boot', 'FastAPI', 'React', 'Multi-agent AI'],
+    liveUrl: 'https://www.unistep.digital',
+    repoUrl: 'https://github.com/saberabanu0001/Unistep-spring',
+    status: 'Production',
+    image: '/unistep.png',
+    imageAlt: 'Unistep landing page with AI-driven scholarship and university matching dashboard',
+  },
+  {
     title: 'ApplySmart (Trae Hackathon)',
     description:
       'A multi-agent AI system designed to help international students navigate scholarship applications. Featuring a "Critic Agent" that analyzes CVs and goals to block unsuitable applications while recommending optimal paths and generating tailored documents.',
@@ -72,17 +83,6 @@ export const projects = [
     status: 'Featured',
     image: '/calmate-ai-dashboard.png',
     imageAlt: 'CalmMateAI dashboard preview',
-  },
-  {
-    title: 'Unistep',
-    description:
-      'AI-powered scholarship discovery platform with a LangGraph multi-agent system: an Orchestrator delegates to Discovery, Professor, Email Drafting, and Follow-up agents to rank funding matches, score professor hiring confidence, generate personalized outreach, and automate 7/14/21-day follow-ups. Includes a Kanban application tracker, smart deadline alerts, and a 4-step journey wizard. Built with React, Spring Boot, FastAPI, MySQL, Redis, and Docker Compose.',
-    tags: ['LangGraph', 'Spring Boot', 'FastAPI', 'React', 'Multi-agent AI'],
-    liveUrl: 'https://www.unistep.digital',
-    repoUrl: 'https://github.com/saberabanu0001/Unistep-spring',
-    status: 'Production',
-    image: '/unistep.png',
-    imageAlt: 'Unistep landing page with AI-driven scholarship and university matching dashboard',
   },
   {
     title: 'PrescriptionPro',
