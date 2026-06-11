@@ -65,9 +65,7 @@ const Projects = () => {
           {projectData.map((project) => (
             <motion.div
               key={project.title}
-              className={`project-card ${project.status === 'Featured' ? 'featured' : ''} ${
-                project.repoUrl ? 'clickable' : ''
-              }`}
+              className={`project-card ${project.repoUrl ? 'clickable' : ''}`}
               variants={fadeInUp}
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}

@@ -30,10 +30,6 @@
   box-shadow: 0 12px 24px rgba(99, 102, 241, 0.15);
 }
 
-.project-card.featured {
-  grid-column: span 2;
-}
-
 .project-image {
   position: relative;
   height: 280px;
@@ -161,10 +157,6 @@
 @media (max-width: 968px) {
   .projects-grid {
     grid-template-columns: 1fr;
-  }
-
-  .project-card.featured {
-    grid-column: span 1;
   }
 
   .project-image {
