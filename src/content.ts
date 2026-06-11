@@ -63,17 +63,6 @@ export const projects = [
     imageAlt: 'Unistep landing page with AI-driven scholarship and university matching dashboard',
   },
   {
-    title: 'ApplySmart (Trae Hackathon)',
-    description:
-      'A multi-agent AI system designed to help international students navigate scholarship applications. Featuring a "Critic Agent" that analyzes CVs and goals to block unsuitable applications while recommending optimal paths and generating tailored documents.',
-    tags: ['FastAPI', 'Multi-agent Systems', 'LLM Reasoning', 'Tailwind'],
-    liveUrl: undefined,
-    repoUrl: 'https://github.com/saberabanu0001/ApplySmart',
-    status: 'Hackathon Project',
-    image: undefined,
-    imageAlt: undefined,
-  },
-  {
     title: 'CalmMateAI',
     description:
       'Mental health companion chatbot with voice input, seriousness detection, and emergency resource routing to ensure timely, compassionate support.',
