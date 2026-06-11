@@ -3,6 +3,11 @@
   publish = "dist"
 
 [[redirects]]
+  from = "/vite.svg"
+  to = "/favicon-48x48.png"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
