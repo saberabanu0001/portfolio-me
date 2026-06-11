@@ -63,6 +63,16 @@ export const projects = [
     imageAlt: 'Unistep landing page with AI-driven scholarship and university matching dashboard',
   },
   {
+    title: 'GarmentAI',
+    description:
+      'Knowledge layer for Bangladesh\'s garment industry — role-aware RAG over labour law, compliance manuals, and factory HR documents. Workers and HR staff ask compliance, safety, or training questions in Bengali or English and get instant, evidence-backed answers. Built with a 7-member team: JWT auth, ChromaDB vector search, Groq LLM, and a Next.js dashboard for Workers, HR Managers, and Compliance Auditors.',
+    tags: ['RAG', 'FastAPI', 'Next.js', 'ChromaDB', 'Groq'],
+    repoUrl: 'https://github.com/saberabanu0001/GarmentAI',
+    status: 'Team Project',
+    image: undefined,
+    imageAlt: undefined,
+  },
+  {
     title: 'CalmMateAI',
     description:
       'Mental health companion chatbot with voice input, seriousness detection, and emergency resource routing to ensure timely, compassionate support.',
