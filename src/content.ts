@@ -282,6 +282,8 @@ export const hackathons = [
     tech: ['NLP', 'Healthcare AI', 'UI/UX'],
     date: '2024',
     status: 'Prototype Phase',
+    image: '/hackathons/itx-healthcare.png',
+    imageAlt: 'Group photo at the ITX Healthcare Hackathon with participants and organizers',
   },
 ]
 
