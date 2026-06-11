@@ -69,8 +69,8 @@ export const projects = [
     tags: ['RAG', 'FastAPI', 'Next.js', 'ChromaDB', 'Groq'],
     repoUrl: 'https://github.com/saberabanu0001/GarmentAI',
     status: 'Team Project',
-    image: undefined,
-    imageAlt: undefined,
+    image: '/garmentai.png',
+    imageAlt: 'GarmentAI HR dashboard with compliance overview, document library, and AI query tracking',
   },
   {
     title: 'CalmMateAI',
