@@ -36,50 +36,35 @@ const About = () => {
           <div className="section-line"></div>
         </motion.div>
 
-        <div className="about-content single-column">
-          <motion.div
-            className="about-text"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-100px' }}
-            variants={staggerContainer}
-          >
-            <motion.p className="about-micro-intro" variants={fadeInUp}>
-              {aboutContent.microIntro}
-            </motion.p>
+        <motion.div
+          className="about-content"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-100px' }}
+          variants={staggerContainer}
+        >
+          <motion.p className="about-intro" variants={fadeInUp}>
+            {aboutContent.intro}
+          </motion.p>
 
-            {aboutContent.paragraphs.map((paragraph) => (
-              <motion.p key={paragraph.substring(0, 20)} variants={fadeInUp}>
-                {paragraph}
-              </motion.p>
+          <div className="about-columns">
+            {aboutContent.columns.map((column) => (
+              <motion.div key={column.label} className="about-column" variants={fadeInUp}>
+                <h3 className="about-column-label">{column.label}</h3>
+                {column.paragraphs.map((paragraph) => (
+                  <p key={paragraph.substring(0, 24)}>{paragraph}</p>
+                ))}
+              </motion.div>
             ))}
+          </div>
 
-            <motion.p className="about-impact" variants={fadeInUp}>
-              {aboutContent.impact}
-            </motion.p>
-
-            <motion.p className="about-personal" variants={fadeInUp}>
-              {aboutContent.personalNote}
-            </motion.p>
-
-            <motion.div className="about-highlights" variants={fadeInUp}>
-              {aboutContent.highlights.map((item) => (
-                <div key={item.label} className="highlight-card">
-                  <span className="highlight-icon" aria-hidden="true">
-                    {item.icon}
-                  </span>
-                  <span className="highlight-label">{item.label}</span>
-                  <span className="highlight-value">{item.value}</span>
-                </div>
-              ))}
-            </motion.div>
-
-          </motion.div>
-        </div>
+          <motion.p className="about-personal" variants={fadeInUp}>
+            {aboutContent.personalNote}
+          </motion.p>
+        </motion.div>
       </div>
     </section>
   )
 }
 
 export default About
-

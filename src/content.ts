@@ -25,18 +25,24 @@ export const heroContent = {
 
 export const aboutContent = {
   heading: 'About Sabera',
-  microIntro: '🚀 Passionate about turning data into intelligent, human-centered AI solutions.',
-  paragraphs: [
-    "I'm an international Computer Science student at Sejong University and a Junior Python Developer at JBRSOFT Limited. I'm passionate about transforming research-driven ideas into intelligent, human-centered AI products.",
-    'As a Teaching Assistant at Sejong University and a contributor to the Physical AI Assistant robotics project, I thrive at the intersection of computer vision, intelligent mobility, human-robot interaction, and thoughtful product design.',
+  intro: '🚀 Passionate about turning data into intelligent, human-centered AI solutions.',
+  columns: [
+    {
+      label: 'Background',
+      paragraphs: [
+        "I'm an international Computer Science student at Sejong University and a Junior Python Developer at JBRSOFT Limited. I'm passionate about transforming research-driven ideas into intelligent, human-centered AI products.",
+      ],
+    },
+    {
+      label: 'Research & Teaching',
+      paragraphs: [
+        'As a Teaching Assistant at Sejong University and a contributor to the Physical AI Assistant robotics project, I thrive at the intersection of computer vision, intelligent mobility, human-robot interaction, and thoughtful product design.',
+        'Our robotics system integrates Agentic AI, real-time vision processing, and intelligent navigation to create autonomous physical assistants that bridge the physical and digital worlds.',
+      ],
+    },
   ],
-  impact: 'Our robotics system integrates Agentic AI, real-time vision processing, and intelligent navigation to create autonomous physical assistants that bridge the physical and digital worlds.',
-  personalNote: 'Beyond coding, I love mentoring students and exploring how AI can make learning more inclusive.',
-  highlights: [
-    { label: 'Focus', value: 'Agentic AI, NLP & RAG experiences', icon: '🤖' },
-    { label: 'Currently Learning', value: 'Computer Vision and LangChain', icon: '📚' },
-    { label: 'Strength', value: 'Empathetic leadership & clear communication', icon: '💬' },
-  ],
+  personalNote:
+    'Beyond coding, I love mentoring students and exploring how AI can make learning more inclusive.',
 }
 
 export const projects = [
