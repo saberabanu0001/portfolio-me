@@ -10,8 +10,11 @@
   --bg-secondary: #111111;
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
-  --accent: #6366f1;
-  --accent-hover: #4f46e5;
+  --accent: #46C3DB;
+  --accent-hover: #38A8C0;
+  --accent-secondary: #5EEAD4;
+  --accent-rgb: 70, 195, 219;
+  --accent-secondary-rgb: 94, 234, 212;
   --border: #1f1f1f;
   --card-bg: #151515;
   --header-scrolled-bg: rgba(10, 10, 10, 0.8);
@@ -19,7 +22,7 @@
   --image-surface: #f8fafc;
   --overlay-bg: rgba(10, 10, 10, 0.9);
   --tag-bg: rgba(255, 255, 255, 0.03);
-  --shadow-color: rgba(99, 102, 241, 0.15);
+  --shadow-color: rgba(70, 195, 219, 0.15);
 }
 
 [data-theme='light'] {
@@ -27,16 +30,19 @@
   --bg-secondary: #ffffff;
   --text-primary: #0f172a;
   --text-secondary: #64748b;
-  --accent: #6366f1;
-  --accent-hover: #4f46e5;
+  --accent: #46C3DB;
+  --accent-hover: #2BA8C4;
+  --accent-secondary: #5EEAD4;
+  --accent-rgb: 70, 195, 219;
+  --accent-secondary-rgb: 94, 234, 212;
   --border: #e2e8f0;
   --card-bg: #ffffff;
   --header-scrolled-bg: rgba(255, 255, 255, 0.9);
   --hero-meta-bg: rgba(255, 255, 255, 0.85);
   --image-surface: #f1f5f9;
   --overlay-bg: rgba(15, 23, 42, 0.85);
-  --tag-bg: rgba(99, 102, 241, 0.06);
-  --shadow-color: rgba(99, 102, 241, 0.12);
+  --tag-bg: rgba(var(--accent-rgb), 0.06);
+  --shadow-color: rgba(70, 195, 219, 0.12);
 }
 
 [data-theme='light'] .project-card,
@@ -266,7 +272,7 @@ html {
   }
 
   .section-number {
-    color: #6366f1 !important;
+    color: var(--accent) !important;
   }
 
   .text-primary,
@@ -342,7 +348,7 @@ html {
   }
 
   .section-line {
-    background: #6366f1 !important;
+    background: var(--accent) !important;
     max-width: 150px;
   }
 
@@ -362,7 +368,7 @@ html {
 
   /* Links */
   a {
-    color: #6366f1 !important;
+    color: var(--accent) !important;
     text-decoration: underline !important;
   }
 
@@ -386,7 +392,7 @@ html {
   }
 
   .skill-progress {
-    background: #6366f1 !important;
+    background: var(--accent) !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -507,7 +513,7 @@ html {
 
   /* Print-friendly colors */
   .about-micro-intro {
-    color: #6366f1 !important;
+    color: var(--accent) !important;
   }
 
   .about-impact {
@@ -517,7 +523,7 @@ html {
   .award-badge {
     background: #f0f0f0 !important;
     border: 1px solid #ddd !important;
-    color: #6366f1 !important;
+    color: var(--accent) !important;
   }
 }
 
