@@ -13,11 +13,19 @@
 }
 
 .about-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
   color: var(--accent);
   font-weight: 600;
   font-size: 1.05rem;
   line-height: 1.7;
   margin: 0;
+}
+
+.about-intro-icon {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
 }
 
 .about-columns {

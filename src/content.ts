@@ -25,7 +25,7 @@ export const heroContent = {
 
 export const aboutContent = {
   heading: 'About Sabera',
-  intro: '🚀 Passionate about turning data into intelligent, human-centered AI solutions.',
+  intro: 'Passionate about turning data into intelligent, human-centered AI solutions.',
   columns: [
     {
       label: 'Background',

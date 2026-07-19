@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { navigationLinks } from '../content'
 import { useTheme } from '../hooks/useTheme'
+import { Moon, Sun } from './Icons'
 
 interface HeaderProps {
   isScrolled: boolean
@@ -56,7 +57,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
             aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
             title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
           >
-            {theme === 'dark' ? '☀️' : '🌙'}
+            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
 
           <button

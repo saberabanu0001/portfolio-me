@@ -58,7 +58,9 @@
 }
 
 .award-icon {
-  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   animation: bounce 2s infinite;
 }
 
@@ -164,19 +166,22 @@
   gap: 0.75rem;
 }
 
-.award-team-list li {
+.award-team-list li,
+.award-professors-list li {
   color: var(--text-secondary);
   padding: 0.5rem 0;
-  padding-left: 1.5rem;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
   transition: color 0.3s ease;
 }
 
-.award-team-list li::before {
-  content: '👤';
-  position: absolute;
-  left: 0;
-  font-size: 1rem;
+.award-list-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--text-secondary);
 }
 
 .award-team-list li.highlight {
@@ -185,22 +190,8 @@
   font-size: 1.05rem;
 }
 
-.award-team-list li.highlight::before {
-  content: '⭐';
-}
-
-.award-professors-list li {
-  color: var(--text-secondary);
-  padding: 0.5rem 0;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.award-professors-list li::before {
-  content: '🎓';
-  position: absolute;
-  left: 0;
-  font-size: 1rem;
+.award-team-list li.highlight .award-list-icon {
+  color: var(--accent);
 }
 
 .award-professors-list li strong {

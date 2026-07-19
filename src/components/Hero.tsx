@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { heroContent } from '../content'
+import { FileText } from './Icons'
 
 const Hero = () => {
   const [showPhoto, setShowPhoto] = useState(true)
@@ -61,8 +62,9 @@ const Hero = () => {
             <a href={heroContent.secondaryCta.href} className="btn btn-secondary">
               {heroContent.secondaryCta.label}
             </a>
-            <button onClick={handleDownloadPDF} className="btn btn-outline">
-              📄 Download PDF
+            <button onClick={handleDownloadPDF} className="btn btn-outline btn-with-icon">
+              <FileText size={18} />
+              Download PDF
             </button>
           </div>
         </motion.div>

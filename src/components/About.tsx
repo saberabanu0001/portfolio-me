@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { aboutContent } from '../content'
+import { Rocket } from './Icons'
 
 const About = () => {
   const fadeInUp = {
@@ -44,7 +45,8 @@ const About = () => {
           variants={staggerContainer}
         >
           <motion.p className="about-intro" variants={fadeInUp}>
-            {aboutContent.intro}
+            <Rocket size={20} className="about-intro-icon" aria-hidden="true" />
+            <span>{aboutContent.intro}</span>
           </motion.p>
 
           <div className="about-columns">

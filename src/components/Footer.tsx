@@ -1,4 +1,4 @@
-import { Github, LinkedIn, Twitter, Email, Facebook } from './Icons'
+import { Github, LinkedIn, Twitter, Email, Facebook, FileText } from './Icons'
 import { contact } from '../content'
 
 const Footer = () => {
@@ -40,8 +40,9 @@ const Footer = () => {
               <Email />
             </a>
           </div>
-          <button onClick={handleDownloadPDF} className="btn-download-pdf">
-            📄 Download Portfolio PDF
+          <button onClick={handleDownloadPDF} className="btn-download-pdf btn-with-icon">
+            <FileText size={18} />
+            Download Portfolio PDF
           </button>
           <p className="footer-text">
             Designed & Built by <span className="highlight">Sabera Banu</span>

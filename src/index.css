@@ -106,6 +106,13 @@ html {
   padding: 0 clamp(2rem, 5vw, 4rem);
 }
 
+.btn-with-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 /* Global section header */
 .section-header {
   display: flex;

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { awards } from '../content'
+import { GraduationCap, Star, Trophy, User } from './Icons'
 
 const Awards = () => {
   const fadeInUp = {
@@ -48,7 +49,9 @@ const Awards = () => {
           {awards.map((award, index) => (
             <motion.article key={index} className="award-card" variants={fadeInUp}>
               <div className="award-badge">
-                <span className="award-icon">🏆</span>
+                <span className="award-icon" aria-hidden="true">
+                  <Trophy size={18} />
+                </span>
                 <span className="award-badge-text">Award Winner</span>
               </div>
 
@@ -81,7 +84,9 @@ const Awards = () => {
                   <ul className="award-team-list">
                     {award.teamMembers.map((member, idx) => (
                       <li key={idx} className={member === 'Sabera Banu' ? 'highlight' : ''}>
-                        {member === 'Sabera Banu' ? '⭐ ' : ''}
+                        <span className="award-list-icon" aria-hidden="true">
+                          {member === 'Sabera Banu' ? <Star size={16} /> : <User size={16} />}
+                        </span>
                         {member}
                       </li>
                     ))}
@@ -94,7 +99,12 @@ const Awards = () => {
                     <ul className="award-professors-list">
                       {award.professors.map((prof, idx) => (
                         <li key={idx}>
-                          <strong>{prof.name}</strong> — {prof.role}
+                          <span className="award-list-icon" aria-hidden="true">
+                            <GraduationCap size={16} />
+                          </span>
+                          <span>
+                            <strong>{prof.name}</strong> — {prof.role}
+                          </span>
                         </li>
                       ))}
                     </ul>
