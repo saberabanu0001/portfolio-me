@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { awards } from '../content'
-import { GraduationCap, Star, Trophy, User } from './Icons'
+import { GraduationCap, Star, User } from './Icons'
 
 const Awards = () => {
   const fadeInUp = {
@@ -50,7 +50,7 @@ const Awards = () => {
             <motion.article key={index} className="award-card" variants={fadeInUp}>
               <div className="award-badge">
                 <span className="award-icon" aria-hidden="true">
-                  <Trophy size={18} />
+                  🏆
                 </span>
                 <span className="award-badge-text">Award Winner</span>
               </div>
