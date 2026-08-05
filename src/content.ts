@@ -242,6 +242,17 @@ export const awards = [
 
 export const hackathons = [
   {
+    event: 'Cursor 4 Hackathon',
+    organization: 'Cursor Community & Seoul AI Hub',
+    description:
+      'Joined the 4th Cursor Hackathon in Seoul — a full-day builder event bringing together developers, founders, and AI enthusiasts to ship products with Cursor’s AI-native workflows. Collaborated with the local community, pitched demos, and connected with builders across the Seoul AI ecosystem.',
+    tech: ['Cursor', 'AI-assisted Development', 'Rapid Prototyping'],
+    date: 'August 2026',
+    status: 'Community Builder',
+    image: '/hackathons/cursor-4-hackathon.png',
+    imageAlt: 'Group photo at Cursor 4 Hackathon Seoul with participants in front of the Cursor Hackathon backdrop',
+  },
+  {
     event: 'Cursor Hackathon Seoul',
     organization: 'Cursor Community',
     description:
