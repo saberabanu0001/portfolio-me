@@ -30,7 +30,7 @@ const Blog = () => {
           variants={fadeInUp}
         >
           <span className="section-number">05.</span>
-          <h2 className="section-title">Journal</h2>
+          <h2 className="section-title">Blog</h2>
           <div className="section-line"></div>
         </motion.div>
 

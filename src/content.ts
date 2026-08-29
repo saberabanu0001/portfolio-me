@@ -4,7 +4,7 @@ export const navigationLinks = [
   { name: 'Projects', href: '#projects' },
   { name: 'Awards', href: '#awards' },
   { name: 'Hackathons', href: '#hackathons' },
-  { name: 'Journal', href: '#blog' },
+  { name: 'Blog', href: '#blog' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
   { name: 'Education', href: '#education' },
@@ -323,7 +323,7 @@ export const hackathons = [
   },
 ]
 
-/** Add journal entries here — newest first. Drop images in public/blog/ */
+/** Add blog posts here — newest first. Drop images in public/blog/ */
 export const blogPosts = [
   {
     title: 'TOYTHON — Building Kori in One Day',
