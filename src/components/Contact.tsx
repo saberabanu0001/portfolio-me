@@ -45,7 +45,7 @@ const Contact = () => {
           viewport={{ once: true, margin: '-100px' }}
           variants={fadeInUp}
         >
-          <span className="section-number">07.</span>
+          <span className="section-number">09.</span>
           <h2 className="section-title">Let’s collaborate</h2>
           <div className="section-line"></div>
         </motion.div>
