@@ -202,7 +202,7 @@ export const education = [
   {
     institution: 'Sejong University',
     degree: 'B.S. in Computer Science',
-    period: '2021 — Present',
+    period: '2022 — Present',
     location: 'Seoul, South Korea',
     details: ['International Student', 'Research focus: NLP & AI systems', 'Capstone: Robotics & Hardware learning journal'],
     logo: '/image.png',
@@ -243,10 +243,10 @@ export const awards = [
 export const hackathons = [
   {
     event: 'TOYTHON · Physical AI Hackathon',
-    organization: 'TEAM HUMAN & Korea Investment Accelerator · Sponsored by OpenAI & NUCODE',
+    organization: 'TEAM HUMAN · Sponsored by OpenAI & NUCODE',
     project: 'Kori',
     description:
-      'Built Kori in one intense day at TOYTHON — a Physical AI hackathon where builders use NUCODE development boards and vibe coding to turn ideas into real, moving prototypes. Kori is a small AI-powered companion you attach to belongings you cannot afford to forget — your bag, laptop, or keys. Walk away without it, or someone else picks it up, and Kori reacts: lights change, its face responds, and it uses voice to call you out. Instead of another buried phone notification, we explored what happens when AI physically looks out for the things you care about — combining OpenAI with NUCODE hardware so software, sensors, and AI make a simple object feel surprisingly alive.',
+      'Built Kori in one day at TOYTHON, a Physical AI hackathon with NUCODE boards and OpenAI. Clip it to your bag or keys — walk away and Kori reacts with lights, expressions, and voice instead of another buried phone alert.',
     tech: ['OpenAI', 'NUCODE NU-40 DK', 'Physical AI', 'IoT', 'Arduino'],
     date: 'August 2026',
     status: 'Featured Project',

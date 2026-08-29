@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { hackathons } from '../content'
 
+const WARM_HACKATHON_STATUSES = new Set(['Featured Project', 'Innovation Track'])
+
 const Hackathons = () => {
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
@@ -48,7 +50,13 @@ const Hackathons = () => {
                     {hackathons.map((item, index) => (
                         <motion.div key={index} className="hackathon-card" variants={fadeInUp}>
                             <div className="hackathon-header">
-                                <div className="hackathon-badge">{item.status}</div>
+                                <div
+                                    className={`hackathon-badge${
+                                        WARM_HACKATHON_STATUSES.has(item.status) ? ' badge-warm' : ''
+                                    }`}
+                                >
+                                    {item.status}
+                                </div>
                                 <span className="hackathon-date">{item.date}</span>
                             </div>
 

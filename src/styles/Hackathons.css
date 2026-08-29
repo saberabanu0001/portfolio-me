@@ -37,14 +37,20 @@
 }
 
 .hackathon-badge {
-  background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.1), rgba(var(--accent-secondary-rgb), 0.1));
-  border: 1px solid rgba(var(--accent-rgb), 0.2);
+  background: rgba(var(--accent-rgb), 0.1);
+  border: 1px solid rgba(var(--accent-rgb), 0.22);
   color: var(--accent);
   padding: 0.35rem 1rem;
   border-radius: 50px;
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+.hackathon-badge.badge-warm {
+  background: rgba(var(--accent-warm-rgb), 0.12);
+  border-color: rgba(var(--accent-warm-rgb), 0.35);
+  color: var(--accent-warm);
 }
 
 .hackathon-date {

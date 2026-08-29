@@ -4,8 +4,8 @@
   "description": "Python Developer portfolio — NLP, LLMs, and AI-powered web experiences.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#46C3DB",
+  "background_color": "#0D1117",
+  "theme_color": "#22C7C9",
   "icons": [
     {
       "src": "/favicon-48x48.png",

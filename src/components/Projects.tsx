@@ -20,6 +20,8 @@ const openExternal = (url?: string) => {
   window.open(url, '_blank', 'noopener,noreferrer')
 }
 
+const WARM_PROJECT_STATUSES = new Set(['Award Winner', 'Featured'])
+
 const Projects = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 60 },
@@ -101,7 +103,11 @@ const Projects = () => {
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
-                <span className="project-status">{project.status}</span>
+                <span
+                  className={`project-status${WARM_PROJECT_STATUSES.has(project.status) ? ' status-warm' : ''}`}
+                >
+                  {project.status}
+                </span>
                 <p className="project-description">{project.description}</p>
                 <div className="project-tags">
                   {project.tags.map((tag) => (
