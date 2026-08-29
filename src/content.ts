@@ -242,6 +242,18 @@ export const awards = [
 
 export const hackathons = [
   {
+    event: 'TOYTHON · Physical AI Hackathon',
+    organization: 'TEAM HUMAN & Korea Investment Accelerator · Sponsored by OpenAI & NUCODE',
+    project: 'Kori',
+    description:
+      'Built Kori in one intense day at TOYTHON — a Physical AI hackathon where builders use NUCODE development boards and vibe coding to turn ideas into real, moving prototypes. Kori is a small AI-powered companion you attach to belongings you cannot afford to forget — your bag, laptop, or keys. Walk away without it, or someone else picks it up, and Kori reacts: lights change, its face responds, and it uses voice to call you out. Instead of another buried phone notification, we explored what happens when AI physically looks out for the things you care about — combining OpenAI with NUCODE hardware so software, sensors, and AI make a simple object feel surprisingly alive.',
+    tech: ['OpenAI', 'NUCODE NU-40 DK', 'Physical AI', 'IoT', 'Arduino'],
+    date: 'August 2026',
+    status: 'Featured Project',
+    image: '/hackathons/toython-hackathon.jpg',
+    imageAlt: 'Team photo at TOYTHON hackathon in front of the OpenAI and NUCODE sponsored backdrop at Seoul AI Hub',
+  },
+  {
     event: 'Cursor 4 Hackathon',
     organization: 'Cursor Community & Seoul AI Hub',
     description:
