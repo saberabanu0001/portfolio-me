@@ -258,6 +258,10 @@ export const hackathons = [
         src: '/hackathons/ai-for-good-venue.jpg',
         alt: 'Wide view of the AI for Good hackathon floor at Seoul AI Hub',
       },
+      {
+        src: '/hackathons/ai-for-good-poster.jpg',
+        alt: 'Standing next to the AI IMPACT: AI for Good event poster at Seoul AI Hub',
+      },
     ],
   },
   {
