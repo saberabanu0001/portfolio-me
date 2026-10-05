@@ -315,8 +315,24 @@ export const hackathons = [
     tech: ['Cursor', 'AI-assisted Development', 'Rapid Prototyping'],
     date: 'April 2026',
     status: 'Community Builder',
-    image: '/hackathons/cursor-hackathon.png',
-    imageAlt: 'Sabera Banu presenting a project during Cursor Hackathon Seoul',
+    images: [
+      {
+        src: '/hackathons/cursor-hackathon.png',
+        alt: 'Sabera Banu presenting a project during Cursor Hackathon Seoul',
+      },
+      {
+        src: '/hackathons/cursor-hackathon-crowd.jpg',
+        alt: 'Participants gathered on the floor coding at Cursor Eurekathon Seoul',
+      },
+      {
+        src: '/hackathons/cursor-hackathon-building.jpg',
+        alt: 'Focused building session on a laptop during Cursor Hackathon Seoul',
+      },
+      {
+        src: '/hackathons/cursor-hackathon-swag.jpg',
+        alt: 'Cursor Eurekathon Seoul towel and sticker kit swag',
+      },
+    ],
   },
   {
     event: 'Trae Hackathon',
