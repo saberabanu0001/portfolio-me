@@ -11,7 +11,6 @@ import './styles/Projects.css'
 import './styles/Education.css'
 import './styles/Awards.css'
 import './styles/Hackathons.css'
-import './styles/Blog.css'
 import './styles/Contact.css'
 import './styles/Footer.css'
 

@@ -4,7 +4,6 @@ export const navigationLinks = [
   { name: 'Projects', href: '#projects' },
   { name: 'Awards', href: '#awards' },
   { name: 'Hackathons', href: '#hackathons' },
-  { name: 'Blog', href: '#blog' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
   { name: 'Education', href: '#education' },
@@ -243,6 +242,17 @@ export const awards = [
 
 export const hackathons = [
   {
+    event: 'AI IMPACT · AI for Good Hackathon',
+    organization: 'Seoul AI Hub · Team Human · with Seoul City, Seoul Metropolitan Office of Education & Google',
+    description:
+      'Selected among ~60 participants for a same-day hackathon + policy forum at Seoul AI Hub. Built a working prototype with a six-person team and pitched a one-page policy brief — what Seoul City and the Education Office would need to take the idea into the field — in front of city officials, Google Public Policy, and impact investors.',
+    tech: ['AI Prototyping', 'Public Policy', 'Cursor', 'Social Impact'],
+    date: 'September 2026',
+    status: 'Selected Participant',
+    image: '/hackathons/ai-for-good-hackathon.jpg',
+    imageAlt: 'Building and collaborating at the AI for Good hackathon at Seoul AI Hub',
+  },
+  {
     event: 'TOYTHON · Physical AI Hackathon',
     organization: 'TEAM HUMAN · Sponsored by OpenAI & NUCODE',
     project: 'Kori',
@@ -320,32 +330,6 @@ export const hackathons = [
     status: 'Prototype Phase',
     image: '/hackathons/itx-healthcare.png',
     imageAlt: 'Group photo at the ITX Healthcare Hackathon with participants and organizers',
-  },
-]
-
-/** Add blog posts here — newest first. Drop images in public/blog/ */
-export const blogPosts = [
-  {
-    title: 'TOYTHON — Building Kori in One Day',
-    date: 'August 22, 2026',
-    location: 'Seoul AI Hub, Seocho, Seoul',
-    category: 'Hackathon',
-    description:
-      'Spent the day at TOYTHON building Kori with my team — a Physical AI companion on NUCODE hardware. Five hours of wiring, vibe coding, and debugging until something on the table actually reacted when you walked away from it.',
-    tags: ['Physical AI', 'OpenAI', 'NUCODE', 'Seoul'],
-    image: '/hackathons/toython-hackathon.jpg',
-    imageAlt: 'Team at TOYTHON hackathon in front of the OpenAI and NUCODE backdrop',
-  },
-  {
-    title: 'Cursor 4 Hackathon — Seoul',
-    date: 'August 2026',
-    location: 'Seoul AI Hub, Seoul',
-    category: 'Event',
-    description:
-      'Joined the 4th Cursor Hackathon in Seoul — shipped with AI-native workflows, met local builders, and watched demos from across the Seoul AI community.',
-    tags: ['Cursor', 'Hackathon', 'Seoul'],
-    image: '/hackathons/cursor-4-hackathon.png',
-    imageAlt: 'Group photo at Cursor 4 Hackathon Seoul',
   },
 ]
 
