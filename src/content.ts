@@ -273,8 +273,28 @@ export const hackathons = [
     tech: ['OpenAI', 'NUCODE NU-40 DK', 'Physical AI', 'IoT', 'Arduino'],
     date: 'August 2026',
     status: 'Featured Project',
-    image: '/hackathons/toython-hackathon.jpg',
-    imageAlt: 'Team photo at TOYTHON hackathon in front of the OpenAI and NUCODE sponsored backdrop at Seoul AI Hub',
+    images: [
+      {
+        src: '/hackathons/toython-hackathon.jpg',
+        alt: 'Team photo at TOYTHON in front of the OpenAI and NUCODE backdrop at Seoul AI Hub',
+      },
+      {
+        src: '/hackathons/toython-team.jpg',
+        alt: 'TOYTHON team selfie at Seoul AI Hub',
+      },
+      {
+        src: '/hackathons/toython-building.jpg',
+        alt: 'Building Kori with laptops and NUCODE hardware during TOYTHON',
+      },
+      {
+        src: '/hackathons/toython-lunch.jpg',
+        alt: 'Lunch break with teammates during TOYTHON at Seoul AI Hub',
+      },
+      {
+        src: '/hackathons/toython-portrait.jpg',
+        alt: 'Portrait during TOYTHON at Seoul AI Hub',
+      },
+    ],
   },
   {
     event: 'Cursor 4 Hackathon',
