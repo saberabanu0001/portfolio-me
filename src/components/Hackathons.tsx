@@ -1,4 +1,5 @@
-import { useState, type MouseEvent } from 'react'
+import { useEffect, useState, type MouseEvent } from 'react'
+import { createPortal } from 'react-dom'
 import { motion } from 'framer-motion'
 import { hackathons } from '../content'
 
@@ -20,71 +21,169 @@ function getImages(item: HackathonItem): HackathonImage[] {
 
 const HackathonGallery = ({ images, event }: { images: HackathonImage[]; event: string }) => {
   const [index, setIndex] = useState(0)
+  const [lightboxOpen, setLightboxOpen] = useState(false)
   const hasMultiple = images.length > 1
   const current = images[index]
 
-  const goPrev = (e: MouseEvent) => {
-    e.stopPropagation()
+  const goPrev = (e?: MouseEvent) => {
+    e?.stopPropagation()
     setIndex((i) => (i - 1 + images.length) % images.length)
   }
 
-  const goNext = (e: MouseEvent) => {
-    e.stopPropagation()
+  const goNext = (e?: MouseEvent) => {
+    e?.stopPropagation()
     setIndex((i) => (i + 1) % images.length)
   }
 
+  const openLightbox = () => setLightboxOpen(true)
+  const closeLightbox = () => setLightboxOpen(false)
+
+  useEffect(() => {
+    if (!lightboxOpen) return
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeLightbox()
+      if (e.key === 'ArrowLeft' && hasMultiple) {
+        setIndex((i) => (i - 1 + images.length) % images.length)
+      }
+      if (e.key === 'ArrowRight' && hasMultiple) {
+        setIndex((i) => (i + 1) % images.length)
+      }
+    }
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    window.addEventListener('keydown', onKeyDown)
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+      window.removeEventListener('keydown', onKeyDown)
+    }
+  }, [lightboxOpen, hasMultiple, images.length])
+
   return (
-    <div className={`hackathon-gallery${hasMultiple ? ' has-multiple' : ''}`}>
-      <div className="hackathon-image-wrapper">
-        <img
-          src={current.src}
-          alt={current.alt ?? `${event} photo ${index + 1}`}
-          className="hackathon-image"
-        />
+    <>
+      <div className={`hackathon-gallery${hasMultiple ? ' has-multiple' : ''}`}>
+        <div className="hackathon-image-wrapper">
+          <button
+            type="button"
+            className="hackathon-image-trigger"
+            onClick={openLightbox}
+            aria-label={`View full photo: ${current.alt ?? event}`}
+          >
+            <img
+              src={current.src}
+              alt={current.alt ?? `${event} photo ${index + 1}`}
+              className="hackathon-image"
+            />
+          </button>
+
+          {hasMultiple && (
+            <>
+              <button
+                type="button"
+                className="hackathon-gallery-nav prev"
+                onClick={goPrev}
+                aria-label="Previous photo"
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                className="hackathon-gallery-nav next"
+                onClick={goNext}
+                aria-label="Next photo"
+              >
+                ›
+              </button>
+              <span className="hackathon-gallery-count">
+                {index + 1} / {images.length}
+              </span>
+            </>
+          )}
+        </div>
 
         {hasMultiple && (
-          <>
-            <button
-              type="button"
-              className="hackathon-gallery-nav prev"
-              onClick={goPrev}
-              aria-label="Previous photo"
-            >
-              ‹
-            </button>
-            <button
-              type="button"
-              className="hackathon-gallery-nav next"
-              onClick={goNext}
-              aria-label="Next photo"
-            >
-              ›
-            </button>
-            <span className="hackathon-gallery-count">
-              {index + 1} / {images.length}
-            </span>
-          </>
+          <div className="hackathon-gallery-dots" role="tablist" aria-label="Photo gallery">
+            {images.map((img, i) => (
+              <button
+                key={img.src}
+                type="button"
+                className={`hackathon-gallery-dot${i === index ? ' active' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setIndex(i)
+                }}
+                aria-label={`Show photo ${i + 1}`}
+                aria-selected={i === index}
+              />
+            ))}
+          </div>
         )}
       </div>
 
-      {hasMultiple && (
-        <div className="hackathon-gallery-dots" role="tablist" aria-label="Photo gallery">
-          {images.map((img, i) => (
+      {lightboxOpen &&
+        createPortal(
+          <div
+            className="hackathon-lightbox"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Full-size photo"
+            onClick={closeLightbox}
+          >
             <button
-              key={img.src}
               type="button"
-              className={`hackathon-gallery-dot${i === index ? ' active' : ''}`}
-              onClick={(e) => {
-                e.stopPropagation()
-                setIndex(i)
-              }}
-              aria-label={`Show photo ${i + 1}`}
-              aria-selected={i === index}
+              className="hackathon-lightbox-close"
+              onClick={closeLightbox}
+              aria-label="Close full photo"
+            >
+              ×
+            </button>
+
+            {hasMultiple && (
+              <button
+                type="button"
+                className="hackathon-lightbox-nav prev"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  goPrev()
+                }}
+                aria-label="Previous photo"
+              >
+                ‹
+              </button>
+            )}
+
+            <img
+              src={current.src}
+              alt={current.alt ?? `${event} photo ${index + 1}`}
+              className="hackathon-lightbox-image"
+              onClick={(e) => e.stopPropagation()}
             />
-          ))}
-        </div>
-      )}
-    </div>
+
+            {hasMultiple && (
+              <button
+                type="button"
+                className="hackathon-lightbox-nav next"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  goNext()
+                }}
+                aria-label="Next photo"
+              >
+                ›
+              </button>
+            )}
+
+            {hasMultiple && (
+              <span className="hackathon-lightbox-count">
+                {index + 1} / {images.length}
+              </span>
+            )}
+          </div>,
+          document.body,
+        )}
+    </>
   )
 }
 
