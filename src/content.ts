@@ -249,8 +249,16 @@ export const hackathons = [
     tech: ['AI Prototyping', 'Public Policy', 'Cursor', 'Social Impact'],
     date: 'September 2026',
     status: 'Selected Participant',
-    image: '/hackathons/ai-for-good-hackathon.jpg',
-    imageAlt: 'Building and collaborating at the AI for Good hackathon at Seoul AI Hub',
+    images: [
+      {
+        src: '/hackathons/ai-for-good-hackathon.jpg',
+        alt: 'Building and collaborating at the AI for Good hackathon at Seoul AI Hub',
+      },
+      {
+        src: '/hackathons/ai-for-good-venue.jpg',
+        alt: 'Wide view of the AI for Good hackathon floor at Seoul AI Hub',
+      },
+    ],
   },
   {
     event: 'TOYTHON · Physical AI Hackathon',
